@@ -1,164 +1,98 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 854 520" width="854" height="520">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 854 200" width="854" height="200">
   <defs>
     <style>
-      text { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif; }
-      .mono { font-family: 'SF Mono', 'Roboto Mono', monospace; }
-
-      @keyframes sweep {
-        from { transform: rotate(-90deg); }
-        to   { transform: rotate(270deg); }
-      }
-      @keyframes blink {
-        0%,100% { opacity:.3; }
-        50%      { opacity:1; }
-      }
-      @keyframes fadein {
-        from { opacity:0; }
-        to   { opacity:1; }
-      }
-
-      .radar-sweep {
-        transform-origin: 427px 148px;
-        animation: sweep 5s linear infinite;
-      }
-      .threat-a { animation: blink 1.8s ease-in-out 0.0s infinite; }
-      .threat-b { animation: blink 1.8s ease-in-out 0.5s infinite; }
-      .threat-c { animation: blink 1.8s ease-in-out 1.0s infinite; }
-      .live-dot  { animation: blink 2.4s ease-in-out infinite; }
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
+      * { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
+      .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+      .bg { fill: #161B22; }
+      .bg-inner { fill: #0D1117; }
+      .bg-chip { fill: #21262D; }
+      .border { stroke: #30363D; stroke-width: 1px; }
+      .border-accent { stroke: #3B82F6; stroke-width: 1px; }
+      .text-title { fill: #3B82F6; font-size: 16px; font-weight: 600; }
+      .text-owner { fill: #8892A4; font-size: 16px; font-weight: 400; }
+      .text-main { fill: #F8FAFC; font-size: 13px; font-weight: 400; }
+      .text-muted { fill: #8892A4; font-size: 11px; font-weight: 400; }
+      .text-code { fill: #8892A4; font-size: 11px; font-weight: 400; }
+      .badge-bg { fill: #21262D; stroke: #30363D; stroke-width: 1px; rx: 10px; }
+      .badge-text { fill: #F8FAFC; font-size: 10px; font-weight: 500; }
     </style>
-
-    <pattern id="grid-a" width="24" height="24" patternUnits="userSpaceOnUse">
-      <circle cx="1" cy="1" r=".8" fill="#F8FAFC" fill-opacity=".04"/>
-    </pattern>
-
-    <!-- Radar sweep gradient: green trail -->
-    <coneGradient id="sweep-grad" gradientUnits="userSpaceOnUse"
-      cx="427" cy="148" r="130" startAngle="0" endAngle="120">
-    </coneGradient>
-
-    <radialGradient id="radar-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%"   stop-color="#3B82F6" stop-opacity=".18"/>
-      <stop offset="100%" stop-color="#0D1117" stop-opacity="0"/>
-    </radialGradient>
-
-    <linearGradient id="illus-fade" x1="0%" y1="55%" x2="0%" y2="100%">
-      <stop offset="0%"   stop-color="#161B22" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#161B22" stop-opacity="1"/>
-    </linearGradient>
-
-    <linearGradient id="card-border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%"   stop-color="#3B82F6" stop-opacity=".4"/>
-      <stop offset="50%"  stop-color="#30363D" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#30363D" stop-opacity="1"/>
-    </linearGradient>
   </defs>
 
-  <!-- Card outer shell -->
-  <rect width="854" height="520" rx="14" fill="#161B22"/>
-  <rect width="854" height="520" rx="14" fill="none" stroke="url(#card-border-grad)" stroke-width="1.2"/>
+  <!-- Repository Card Container -->
+  <rect width="854" height="200" rx="10" class="bg border" />
 
-  <!-- ─── Illustration Zone (top 280px) ────────────────────── -->
-  <rect width="854" height="280" rx="14" fill="#0D1117"/>
-  <rect x="0" y="14" width="854" height="266" fill="#0D1117"/>
-  <rect width="854" height="280" fill="url(#grid-a)"/>
+  <!-- Left Side: Repo Content (Width ~520px) -->
+  <g transform="translate(24, 20)">
+    <!-- Header: Repo Icon + Title + Badges -->
+    <!-- Book/Repo Icon -->
+    <path d="M 0 3 C 0 1.34 1.34 0 3 0 L 11 0 C 12.66 0 14 1.34 14 3 L 14 13 C 14 14.66 12.66 16 11 16 L 3 16 C 1.34 16 0 14.66 0 13 Z M 3 2 L 11 2 C 11.55 2 12 2.45 12 3 L 12 13 C 12 13.55 11.55 14 11 14 L 3 14 C 2.45 14 2 13.55 2 13 L 2 3 C 2 2.45 2.45 2 3 2 Z" fill="#8892A4" />
+    <text x="22" y="14" class="text-owner">BalaNerd / </text>
+    <text x="108" y="14" class="text-title">aegis-sentinel</text>
 
-  <!-- Radar: background glow -->
-  <circle cx="427" cy="148" r="130" fill="url(#radar-glow)"/>
+    <!-- Badges -->
+    <rect x="235" y="0" width="54" height="18" rx="9" fill="#21262D" stroke="#30363D" stroke-width="1" />
+    <text x="262" y="12" class="badge-text" text-anchor="middle">Public</text>
 
-  <!-- Radar: rings -->
-  <circle cx="427" cy="148" r="130" fill="none" stroke="#1C2128" stroke-width="1"/>
-  <circle cx="427" cy="148" r="90"  fill="none" stroke="#1C2128" stroke-width="1"/>
-  <circle cx="427" cy="148" r="50"  fill="none" stroke="#1C2128" stroke-width="1"/>
-  <circle cx="427" cy="148" r="16"  fill="#161B22" stroke="#30363D" stroke-width="1"/>
-  <circle cx="427" cy="148" r="4"   fill="#3B82F6"/>
+    <rect x="296" y="0" width="80" height="18" rx="9" fill="#1C2B1D" stroke="#2EA043" stroke-width="1" />
+    <text x="336" y="12" fill="#2EA043" font-size="10" font-weight="600" text-anchor="middle">● Production</text>
 
-  <!-- Radar: crosshairs -->
-  <line x1="427" y1="18"  x2="427" y2="278" stroke="#1C2128" stroke-width="1"/>
-  <line x1="297" y1="148" x2="557" y2="148" stroke="#1C2128" stroke-width="1"/>
-  <line x1="335" y1="56"  x2="519" y2="240" stroke="#1C2128" stroke-width=".7" stroke-dasharray="3 5"/>
-  <line x1="519" y1="56"  x2="335" y2="240" stroke="#1C2128" stroke-width=".7" stroke-dasharray="3 5"/>
+    <rect x="383" y="0" width="46" height="18" rx="9" fill="#1E293B" stroke="#3B82F6" stroke-width="1" />
+    <text x="406" y="12" fill="#3B82F6" font-size="10" font-weight="600" text-anchor="middle">v2.0</text>
 
-  <!-- Radar: sweep arm + trailing arc -->
-  <g class="radar-sweep">
-    <!-- Fading arc trail -->
-    <path d="M 427 148 L 427 18 A 130 130 0 0 1 557 148 Z"
-      fill="#3B82F6" fill-opacity=".06"/>
-    <path d="M 427 148 L 427 18 A 130 130 0 0 1 519 56 Z"
-      fill="#3B82F6" fill-opacity=".04"/>
-    <!-- Sweep line -->
-    <line x1="427" y1="148" x2="427" y2="18"
-      stroke="#3B82F6" stroke-width="1.5" stroke-opacity=".9"/>
-    <circle cx="427" cy="18" r="2.5" fill="#3B82F6"/>
+    <!-- Problem & Solution Description -->
+    <text x="0" y="44" class="text-main">AI-powered disaster intelligence platform monitoring wildfires, earthquakes &amp; severe weather.</text>
+    <text x="0" y="64" class="text-muted">Ingests USGS/FIRMS feeds ➔ Feature Store ➔ RAG Knowledge Engine ➔ MLOps Drift Retraining.</text>
+
+    <!-- Tech Chips Grid -->
+    <g transform="translate(0, 84)">
+      <rect x="0" y="0" width="62" height="22" rx="4" class="bg-chip border" />
+      <text x="31" y="14" class="text-code mono" text-anchor="middle">FastAPI</text>
+
+      <rect x="68" y="0" width="62" height="22" rx="4" class="bg-chip border" />
+      <text x="99" y="14" class="text-code mono" text-anchor="middle">Next.js</text>
+
+      <rect x="136" y="0" width="76" height="22" rx="4" class="bg-chip border" />
+      <text x="174" y="14" class="text-code mono" text-anchor="middle">PostgreSQL</text>
+
+      <rect x="218" y="0" width="52" height="22" rx="4" class="bg-chip border" />
+      <text x="244" y="14" class="text-code mono" text-anchor="middle">Redis</text>
+
+      <rect x="276" y="0" width="58" height="22" rx="4" class="bg-chip border" />
+      <text x="305" y="14" class="text-code mono" text-anchor="middle">Docker</text>
+
+      <rect x="340" y="0" width="58" height="22" rx="4" class="bg-chip border" />
+      <text x="369" y="14" class="text-code mono" text-anchor="middle">PyTorch</text>
+    </g>
+
+    <!-- Meta / Language Row -->
+    <g transform="translate(0, 126)">
+      <circle cx="6" cy="6" r="5" fill="#3572A5" /> <!-- Python color -->
+      <text x="18" y="10" class="text-muted">Python</text>
+      <text x="75" y="10" class="text-muted">★ 14</text>
+      <text x="115" y="10" class="text-muted">⑂ 4</text>
+      <text x="155" y="10" class="text-muted mono">main (79c6788)</text>
+    </g>
   </g>
 
-  <!-- Radar: detected threat nodes -->
-  <!-- Threat A — inner ring -->
-  <circle cx="472" cy="120" r="5"   fill="#0D1117" stroke="#3B82F6" stroke-width="1.5" class="threat-a"/>
-  <circle cx="472" cy="120" r="2"   fill="#3B82F6" class="threat-a"/>
-  <circle cx="472" cy="120" r="12"  fill="#3B82F6" fill-opacity=".08" class="threat-a"/>
+  <!-- Right Side: Architecture / Micro UI Snippet Preview (Width ~270px) -->
+  <g transform="translate(554, 20)">
+    <rect width="276" height="160" rx="8" class="bg-inner border" />
+    <!-- Snippet Header -->
+    <rect width="276" height="24" rx="8" fill="#21262D" />
+    <circle cx="12" cy="12" r="3.5" fill="#FF5F56" />
+    <circle cx="22" cy="12" r="3.5" fill="#FFBD2E" />
+    <circle cx="32" cy="12" r="3.5" fill="#27C93F" />
+    <text x="138" y="16" class="text-code mono" text-anchor="middle" font-size="10">telemetry_stream.log</text>
 
-  <!-- Threat B — mid ring -->
-  <circle cx="370" cy="185" r="5"   fill="#0D1117" stroke="#60A5FA" stroke-width="1.2" class="threat-b"/>
-  <circle cx="370" cy="185" r="2"   fill="#60A5FA" class="threat-b"/>
-
-  <!-- Threat C — outer ring -->
-  <circle cx="510" cy="90"  r="5"   fill="#0D1117" stroke="#94A3B8" stroke-width="1" class="threat-c"/>
-  <circle cx="510" cy="90"  r="2"   fill="#94A3B8" class="threat-c"/>
-
-  <!-- Node data labels -->
-  <text x="480" y="118" font-size="8" fill="#3B82F6" font-weight="600" class="mono">WF-04</text>
-  <text x="350" y="200" font-size="8" fill="#60A5FA" font-weight="600" class="mono">EQ-12</text>
-  <text x="520" y="90"  font-size="8" fill="#94A3B8" font-weight="600" class="mono">STM-7</text>
-
-  <!-- Side info panels (left and right of radar) -->
-  <!-- Left panel: AI score -->
-  <rect x="64" y="80" width="144" height="88" rx="8" fill="#111318" stroke="#21262D" stroke-width="1"/>
-  <text x="80" y="104" font-size="9" fill="#4B5362" letter-spacing="1.5" class="mono">RISK SCORE</text>
-  <text x="80" y="136" font-size="36" font-weight="700" fill="#F8FAFC" letter-spacing="-1">8.4</text>
-  <text x="80" y="154" font-size="9" fill="#94A3B8" class="mono">HIGH SEVERITY</text>
-
-  <!-- Right panel: System health -->
-  <rect x="646" y="80" width="144" height="88" rx="8" fill="#111318" stroke="#21262D" stroke-width="1"/>
-  <text x="662" y="104" font-size="9" fill="#4B5362" letter-spacing="1.5" class="mono">SYSTEMS</text>
-  <circle cx="668" cy="126" r="4" fill="#2EA043" class="live-dot"/>
-  <text x="678" y="130" font-size="11" font-weight="500" fill="#F8FAFC">All Nominal</text>
-  <text x="662" y="150" font-size="9" fill="#94A3B8" class="mono">6 agents active</text>
-  <text x="662" y="162" font-size="9" fill="#94A3B8" class="mono">3 incidents tracked</text>
-
-  <!-- Bottom fade: illustration → card content -->
-  <rect width="854" height="280" fill="url(#illus-fade)"/>
-
-  <!-- ─── Content Zone ──────────────────────────────────────── -->
-  <g transform="translate(48, 295)">
-    <!-- Tags row -->
-    <rect width="72" height="20" rx="10" fill="#1C2128"/>
-    <text x="12" y="13.5" font-size="9" font-weight="600" fill="#94A3B8" letter-spacing="1.5" class="mono">FLAGSHIP</text>
-
-    <rect x="80" y="0" width="104" height="20" rx="10" fill="#1C2128"/>
-    <text x="92" y="13.5" font-size="9" font-weight="600" fill="#94A3B8" letter-spacing="1.5" class="mono">AI · SYSTEMS</text>
-
-    <!-- Status -->
-    <circle cx="212" cy="10" r="4" fill="#2EA043" class="live-dot"/>
-    <text x="222" y="14" font-size="10" font-weight="500" fill="#94A3B8">Production</text>
-
-    <!-- Title -->
-    <text x="0" y="54" font-size="28" font-weight="700" fill="#F8FAFC" letter-spacing="-1">Aegis Sentinel</text>
-
-    <!-- Mission statement -->
-    <text x="0" y="82" font-size="14" font-weight="400" fill="#94A3B8" letter-spacing="-.2">
-      AI-powered disaster intelligence platform. Monitors wildfires, earthquakes, and severe weather
-    </text>
-    <text x="0" y="100" font-size="14" font-weight="400" fill="#94A3B8" letter-spacing="-.2">
-      in real time — with geospatial analysis, RAG knowledge retrieval, and autonomous MLOps.
-    </text>
-
-    <!-- Tech stack row -->
-    <text x="0" y="128" font-size="10" font-weight="400" fill="#4B5362" class="mono">
-      FastAPI · Next.js · PostgreSQL · Redis · Celery · Docker · PyTorch · scikit-learn
-    </text>
-
-    <!-- Links -->
-    <text x="0" y="152" font-size="12" font-weight="500" fill="#3B82F6">GitHub →</text>
-    <text x="76" y="152" font-size="12" font-weight="400" fill="#4B5362">Live Demo →</text>
+    <!-- Snippet Code Content -->
+    <g transform="translate(12, 38)">
+      <text x="0" y="12" fill="#2EA043" font-size="10" class="mono">[OK] USGS Ingest: 14 events/min</text>
+      <text x="0" y="28" fill="#3B82F6" font-size="10" class="mono">[AI] RAG Vector Search: 12ms</text>
+      <text x="0" y="44" fill="#8892A4" font-size="10" class="mono">[ML] Feature Pipeline: Active</text>
+      <text x="0" y="60" fill="#8892A4" font-size="10" class="mono">[SYS] Redis PubSub: Connected</text>
+      <text x="0" y="76" fill="#D29922" font-size="10" class="mono">[MLOps] Drift PSI: 0.02 (Stable)</text>
+      <text x="0" y="92" fill="#2EA043" font-size="10" class="mono">[API] Health Endpoint: 200 OK</text>
+    </g>
   </g>
 </svg>

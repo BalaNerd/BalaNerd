@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 854 48" width="854" height="48">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&amp;display=swap');
+      * { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+      .bg { fill: #161B22; }
+      .border { stroke: #30363D; stroke-width: 1px; }
+      .step-done { fill: #2EA043; }
+      .step-active { fill: #3B82F6; }
+      .step-text { fill: #F8FAFC; font-size: 11px; font-weight: 600; letter-spacing: 0.5px; }
+      .step-subtext { fill: #8892A4; font-size: 9px; font-weight: 500; }
+      .arrow { fill: none; stroke: #30363D; stroke-width: 1.5px; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <!-- Container -->
+  <rect width="854" height="48" rx="8" class="bg border" />
+
+  <!-- Pipeline Steps (THINK -> DESIGN -> BUILD -> TEST -> SHIP -> IMPROVE) -->
+  
+  <!-- Step 1: THINK -->
+  <g transform="translate(24, 14)">
+    <circle cx="8" cy="10" r="4" class="step-done" />
+    <text x="18" y="14" class="step-text">THINK</text>
+  </g>
+  <path d="M 115 24 L 125 24" class="arrow" />
+
+  <!-- Step 2: DESIGN -->
+  <g transform="translate(145, 14)">
+    <circle cx="8" cy="10" r="4" class="step-done" />
+    <text x="18" y="14" class="step-text">DESIGN</text>
+  </g>
+  <path d="M 245 24 L 255 24" class="arrow" />
+
+  <!-- Step 3: BUILD -->
+  <g transform="translate(275, 14)">
+    <circle cx="8" cy="10" r="4" class="step-active" />
+    <text x="18" y="14" class="step-text">BUILD</text>
+  </g>
+  <path d="M 370 24 L 380 24" class="arrow" />
+
+  <!-- Step 4: TEST -->
+  <g transform="translate(400, 14)">
+    <circle cx="8" cy="10" r="4" class="step-done" />
+    <text x="18" y="14" class="step-text">TEST</text>
+  </g>
+  <path d="M 485 24 L 495 24" class="arrow" />
+
+  <!-- Step 5: SHIP -->
+  <g transform="translate(515, 14)">
+    <circle cx="8" cy="10" r="4" class="step-done" />
+    <text x="18" y="14" class="step-text">SHIP</text>
+  </g>
+  <path d="M 600 24 L 610 24" class="arrow" />
+
+  <!-- Step 6: IMPROVE -->
+  <g transform="translate(630, 14)">
+    <circle cx="8" cy="10" r="4" class="step-active" />
+    <text x="18" y="14" class="step-text">IMPROVE</text>
+  </g>
+
+  <!-- Right Status Badge -->
+  <g transform="translate(745, 14)">
+    <rect width="85" height="20" rx="4" fill="#0D1117" stroke="#30363D" stroke-width="1" />
+    <text x="42" y="14" class="step-subtext" text-anchor="middle">CI/CD PASS</text>
+  </g>
+</svg>
