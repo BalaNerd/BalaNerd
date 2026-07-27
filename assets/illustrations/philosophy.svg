@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 854 340" width="854" height="340">
+  <defs>
+    <style>
+      text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .mono { font-family: 'SF Mono', 'Roboto Mono', monospace; }
+    </style>
+    <pattern id="dots-p" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r=".8" fill="#F8FAFC" fill-opacity=".03"/>
+    </pattern>
+  </defs>
+
+  <rect width="854" height="340" fill="#0D1117"/>
+  <rect width="854" height="340" fill="url(#dots-p)"/>
+
+  <!-- Vertical divider between the two columns -->
+  <line x1="430" y1="32" x2="430" y2="308" stroke="#21262D" stroke-width="1"/>
+
+  <!-- ─── Left Column: Typographic Principles ───────────────── -->
+  <g transform="translate(56, 0)">
+    <text x="0" y="68"  font-size="26" font-weight="700" fill="#F8FAFC" letter-spacing="-.8">Build with intention.</text>
+    <text x="0" y="108" font-size="26" font-weight="700" fill="#F8FAFC" letter-spacing="-.8">Optimize for maintainability.</text>
+    <text x="0" y="148" font-size="26" font-weight="700" fill="#F8FAFC" letter-spacing="-.8">Design for humans.</text>
+    <text x="0" y="188" font-size="26" font-weight="700" fill="#F8FAFC" letter-spacing="-.8">Measure before optimizing.</text>
+    <text x="0" y="228" font-size="26" font-weight="700" fill="#F8FAFC" letter-spacing="-.8">Simple beats clever.</text>
+
+    <!-- Accent underline under last principle -->
+    <line x1="0" y1="236" x2="240" y2="236" stroke="#3B82F6" stroke-width="2"/>
+  </g>
+
+  <!-- ─── Right Column: Layer Diagram ──────────────────────── -->
+  <g transform="translate(466, 32)">
+    <!-- Layer 1: User -->
+    <rect x="44" y="0"   width="284" height="56" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+    <text x="186" y="22" font-size="10" font-weight="600" fill="#94A3B8" text-anchor="middle" letter-spacing="1.5" class="mono">USER EXPERIENCE</text>
+    <text x="186" y="40" font-size="10" font-weight="400" fill="#4B5362" text-anchor="middle">Clarity · Accessibility · Speed</text>
+
+    <!-- Connector -->
+    <line x1="186" y1="56" x2="186" y2="72" stroke="#30363D" stroke-width="1"/>
+    <circle cx="186" cy="64" r="2" fill="#4B5362"/>
+
+    <!-- Layer 2: Application -->
+    <rect x="22" y="72" width="328" height="56" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+    <text x="186" y="94" font-size="10" font-weight="600" fill="#94A3B8" text-anchor="middle" letter-spacing="1.5" class="mono">APPLICATION LAYER</text>
+    <text x="186" y="112" font-size="10" font-weight="400" fill="#4B5362" text-anchor="middle">Business Logic · APIs · Microservices</text>
+
+    <!-- Connector -->
+    <line x1="186" y1="128" x2="186" y2="144" stroke="#30363D" stroke-width="1"/>
+    <circle cx="186" cy="136" r="2" fill="#4B5362"/>
+
+    <!-- Layer 3: Data (ACCENT) -->
+    <rect x="0" y="144" width="372" height="56" rx="8" fill="#161B22" stroke="#3B82F6" stroke-width="1.2" stroke-opacity=".5"/>
+    <text x="186" y="166" font-size="10" font-weight="600" fill="#3B82F6" text-anchor="middle" letter-spacing="1.5" class="mono">DATA &amp; PERSISTENCE</text>
+    <text x="186" y="184" font-size="10" font-weight="400" fill="#94A3B8" text-anchor="middle">PostgreSQL · Redis · Consistency · Reliability</text>
+
+    <!-- Connector -->
+    <line x1="186" y1="200" x2="186" y2="216" stroke="#30363D" stroke-width="1"/>
+    <circle cx="186" cy="208" r="2" fill="#4B5362"/>
+
+    <!-- Layer 4: Infrastructure -->
+    <rect x="22" y="216" width="328" height="56" rx="8" fill="#0D1117" stroke="#21262D" stroke-width="1"/>
+    <text x="186" y="238" font-size="10" font-weight="600" fill="#4B5362" text-anchor="middle" letter-spacing="1.5" class="mono">INFRASTRUCTURE</text>
+    <text x="186" y="256" font-size="10" font-weight="400" fill="#4B5362" text-anchor="middle">Docker · CI/CD · Observability · Automation</text>
+  </g>
+</svg>

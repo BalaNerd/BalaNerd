@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 854 480" width="854" height="480">
+  <defs>
+    <style>
+      text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .mono { font-family: 'SF Mono', 'Roboto Mono', monospace; }
+      @keyframes tl-pulse {
+        0%,100%{ opacity:.6; r:3; }
+        50%     { opacity:1;  r:4.5; }
+      }
+      .current-dot { animation: tl-pulse 3s ease-in-out infinite; }
+    </style>
+    <pattern id="dots-t" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r=".7" fill="#F8FAFC" fill-opacity=".03"/>
+    </pattern>
+  </defs>
+
+  <rect width="854" height="480" fill="#0D1117"/>
+  <rect width="854" height="480" fill="url(#dots-t)"/>
+
+  <!-- Spine -->
+  <line x1="212" y1="40" x2="212" y2="440" stroke="#21262D" stroke-width="1"/>
+
+  <!-- ─── Entry 1: B.Tech (CURRENT — accented) ─────────────── -->
+  <g transform="translate(0, 48)">
+    <!-- Date -->
+    <text x="190" y="14" font-size="10" font-weight="400" fill="#4B5362"
+      text-anchor="end" class="mono">2023 – 2027</text>
+
+    <!-- Node — accent + animated -->
+    <circle cx="212" cy="10" r="7" fill="#0D1117" stroke="#3B82F6" stroke-width="1.5"/>
+    <circle cx="212" cy="10" r="3" fill="#3B82F6" class="current-dot"/>
+    <circle cx="212" cy="10" r="16" fill="#3B82F6" fill-opacity=".06"/>
+
+    <!-- Connector to content -->
+    <line x1="219" y1="10" x2="240" y2="10" stroke="#3B82F6" stroke-width="1" stroke-opacity=".5"/>
+
+    <!-- Content -->
+    <text x="252" y="6"  font-size="15" font-weight="600" fill="#F8FAFC" letter-spacing="-.3">B.Tech — Computer Science Engineering</text>
+    <text x="252" y="24" font-size="12" font-weight="400" fill="#94A3B8">SRM Institute of Science &amp; Technology  ·  Specialization: Big Data Analytics  ·  CGPA 8.61</text>
+
+    <!-- Current badge -->
+    <rect x="252" y="34" width="56" height="16" rx="8" fill="#1C2128"/>
+    <text x="280" y="44.5" font-size="8" fill="#3B82F6" text-anchor="middle" letter-spacing="1" class="mono">CURRENT</text>
+  </g>
+
+  <!-- ─── Entry 2: Internship ────────────────────────────────── -->
+  <g transform="translate(0, 148)">
+    <text x="190" y="14" font-size="10" font-weight="400" fill="#4B5362"
+      text-anchor="end" class="mono">2025</text>
+
+    <circle cx="212" cy="10" r="5" fill="#0D1117" stroke="#30363D" stroke-width="1.5"/>
+    <circle cx="212" cy="10" r="2" fill="#4B5362"/>
+    <line x1="217" y1="10" x2="240" y2="10" stroke="#30363D" stroke-width="1"/>
+
+    <text x="252" y="6"  font-size="15" font-weight="600" fill="#F8FAFC" letter-spacing="-.3">Data Scientist &amp; Analyst — Internship</text>
+    <text x="252" y="24" font-size="12" font-weight="400" fill="#94A3B8">Applied machine learning models to production-scale datasets. Delivered measurable outcomes.</text>
+  </g>
+
+  <!-- ─── Entry 3: Hack the Horizon ───────────────────────────── -->
+  <g transform="translate(0, 228)">
+    <text x="190" y="14" font-size="10" font-weight="400" fill="#4B5362"
+      text-anchor="end" class="mono">2024</text>
+
+    <circle cx="212" cy="10" r="5" fill="#0D1117" stroke="#30363D" stroke-width="1.5"/>
+    <circle cx="212" cy="10" r="2" fill="#4B5362"/>
+    <line x1="217" y1="10" x2="240" y2="10" stroke="#30363D" stroke-width="1"/>
+
+    <text x="252" y="6"  font-size="15" font-weight="600" fill="#F8FAFC" letter-spacing="-.3">Hack the Horizon — Hackathon</text>
+    <text x="252" y="24" font-size="12" font-weight="400" fill="#94A3B8">Built a complete full-stack product in under 24 hours. Competed under real engineering constraints.</text>
+  </g>
+
+  <!-- ─── Entry 4: NumeroHack ──────────────────────────────────── -->
+  <g transform="translate(0, 308)">
+    <text x="190" y="14" font-size="10" font-weight="400" fill="#4B5362"
+      text-anchor="end" class="mono">2024</text>
+
+    <circle cx="212" cy="10" r="5" fill="#0D1117" stroke="#30363D" stroke-width="1.5"/>
+    <circle cx="212" cy="10" r="2" fill="#4B5362"/>
+    <line x1="217" y1="10" x2="240" y2="10" stroke="#30363D" stroke-width="1"/>
+
+    <text x="252" y="6"  font-size="15" font-weight="600" fill="#F8FAFC" letter-spacing="-.3">NumeroHack · Mathematical Modeling Competition</text>
+    <text x="252" y="24" font-size="12" font-weight="400" fill="#94A3B8">Applied analytical thinking to complex modeling problems under competition conditions.</text>
+  </g>
+
+  <!-- ─── Entry 5: Horizon ──────────────────────────────────────── -->
+  <g transform="translate(0, 388)">
+    <text x="190" y="14" font-size="10" font-weight="400" fill="#4B5362"
+      text-anchor="end" class="mono">2027 →</text>
+
+    <circle cx="212" cy="10" r="5" fill="#0D1117" stroke="#4B5362" stroke-width="1" stroke-dasharray="2 2"/>
+    <line x1="217" y1="10" x2="240" y2="10" stroke="#4B5362" stroke-width="1" stroke-dasharray="3 4"/>
+
+    <text x="252" y="6"  font-size="15" font-weight="600" fill="#4B5362" letter-spacing="-.3">Full-time Engineering Role</text>
+    <text x="252" y="24" font-size="12" font-weight="400" fill="#4B5362">Targeting backend infrastructure, AI systems, or platform engineering.</text>
+  </g>
+</svg>

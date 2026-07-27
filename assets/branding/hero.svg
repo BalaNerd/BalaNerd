@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 854 480" width="854" height="480">
+  <defs>
+    <style>
+      text { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+      .label { font-family: 'SF Mono', 'Roboto Mono', monospace; }
+
+      @keyframes breathe {
+        0%,100% { opacity:.55; transform:scale(1); }
+        50%      { opacity:1;   transform:scale(1.12); }
+      }
+      @keyframes orbit {
+        from { transform:rotate(0deg)   translateX(56px) rotate(0deg); }
+        to   { transform:rotate(360deg) translateX(56px) rotate(-360deg); }
+      }
+      @keyframes scan {
+        0%,100% { stroke-dashoffset:0; }
+        50%      { stroke-dashoffset:-120; }
+      }
+      .pulse-core  { animation: breathe 3.2s ease-in-out infinite; transform-origin: 636px 218px; }
+      .orbit-dot-1 { animation: orbit 18s linear infinite;          transform-origin: 636px 218px; }
+      .orbit-dot-2 { animation: orbit 24s linear infinite reverse;  transform-origin: 636px 218px; }
+      .scan-line   { animation: scan 4s ease-in-out infinite; }
+    </style>
+
+    <!-- Dot-grid pattern -->
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r=".9" fill="#F8FAFC" fill-opacity=".035"/>
+    </pattern>
+
+    <!-- Subtle accent bloom -->
+    <radialGradient id="bloom" cx="76%" cy="46%" r="42%">
+      <stop offset="0%"   stop-color="#3B82F6" stop-opacity=".07"/>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Left-side edge fade so illustration bleeds naturally -->
+    <linearGradient id="illus-edge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0D1117" stop-opacity="1"/>
+      <stop offset="18%"  stop-color="#0D1117" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Bottom fade for illustration -->
+    <linearGradient id="bottom-fade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="70%"  stop-color="#0D1117" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="1"/>
+    </linearGradient>
+
+    <!-- Clip the illustration to the right side -->
+    <clipPath id="right-clip">
+      <rect x="440" y="0" width="414" height="480"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="854" height="480" fill="#0D1117"/>
+  <rect width="854" height="480" fill="url(#dots)"/>
+  <rect width="854" height="480" fill="url(#bloom)"/>
+
+  <!-- ─── Abstract Illustration (right side, clipped) ─────────── -->
+  <g clip-path="url(#right-clip)" opacity=".65">
+    <!-- Concentric orbital rings -->
+    <circle cx="636" cy="218" r="160" fill="none" stroke="#30363D" stroke-width="1"/>
+    <circle cx="636" cy="218" r="112" fill="none" stroke="#30363D" stroke-width="1"/>
+    <circle cx="636" cy="218" r="68"  fill="none" stroke="#21262D" stroke-width="1"/>
+
+    <!-- Dotted outer ring -->
+    <circle cx="636" cy="218" r="188" fill="none" stroke="#21262D" stroke-width="1" stroke-dasharray="3 7"/>
+
+    <!-- Radial axis lines -->
+    <line x1="636" y1="30"  x2="636" y2="406" stroke="#21262D" stroke-width="1"/>
+    <line x1="448" y1="218" x2="824" y2="218" stroke="#21262D" stroke-width="1"/>
+    <line x1="504" y1="86"  x2="768" y2="350" stroke="#21262D" stroke-width=".7" stroke-dasharray="3 6"/>
+    <line x1="768" y1="86"  x2="504" y2="350" stroke="#21262D" stroke-width=".7" stroke-dasharray="3 6"/>
+
+    <!-- Orbit path dots (cardinal positions) -->
+    <circle cx="636" cy="58"  r="3" fill="#4B5362"/>
+    <circle cx="796" cy="218" r="3" fill="#4B5362"/>
+    <circle cx="636" cy="378" r="3" fill="#4B5362"/>
+    <circle cx="476" cy="218" r="3" fill="#4B5362"/>
+
+    <!-- Satellite nodes on inner ring -->
+    <circle cx="700" cy="158" r="5" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
+    <circle cx="568" cy="278" r="5" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
+    <circle cx="704" cy="280" r="5" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
+    <circle cx="570" cy="158" r="5" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
+
+    <!-- Animated orbit dot 1 -->
+    <circle cx="636" cy="162" r="3.5" fill="#60A5FA" fill-opacity=".8" class="orbit-dot-1"/>
+
+    <!-- Animated orbit dot 2 -->
+    <circle cx="636" cy="274" r="2.5" fill="#4B5362" class="orbit-dot-2"/>
+
+    <!-- Central glow ring -->
+    <circle cx="636" cy="218" r="22" fill="#3B82F6" fill-opacity=".05"/>
+    <circle cx="636" cy="218" r="16" fill="#161B22" stroke="#3B82F6" stroke-width="1.5" stroke-opacity=".7"/>
+
+    <!-- Central accent node — the one intentional accent -->
+    <circle cx="636" cy="218" r="5" fill="#3B82F6" class="pulse-core"/>
+
+    <!-- Data stream — scanning line on outer ring -->
+    <circle cx="636" cy="218" r="160" fill="none"
+      stroke="#3B82F6" stroke-width="1.2" stroke-opacity=".3"
+      stroke-dasharray="40 280" class="scan-line"/>
+  </g>
+
+  <!-- Edge blend into background -->
+  <rect x="440" y="0" width="120" height="480" fill="url(#illus-edge)"/>
+  <rect x="440" y="360" width="414" height="120" fill="url(#bottom-fade)"/>
+
+  <!-- ─── Left Content ──────────────────────────────────────── -->
+
+  <!-- Eyebrow label -->
+  <text x="58" y="124"
+    font-size="10.5" fill="#3B82F6" letter-spacing="2.2"
+    class="label" font-weight="500">
+    BACKEND · AI · FULL STACK
+  </text>
+
+  <!-- Name — maximum typographic weight -->
+  <text x="54" y="222"
+    font-size="72" font-weight="700" fill="#F8FAFC"
+    letter-spacing="-3">
+    S Bala Raju
+  </text>
+
+  <!-- Location -->
+  <text x="58" y="256"
+    font-size="13" font-weight="400" fill="#4B5362"
+    letter-spacing=".3" class="label">
+    CHENNAI, INDIA
+  </text>
+
+  <!-- Editorial tagline -->
+  <text x="58" y="300"
+    font-size="16.5" font-weight="400" fill="#94A3B8"
+    letter-spacing="-.2">
+    I build software that solves real problems.
+  </text>
+  <text x="58" y="322"
+    font-size="16.5" font-weight="400" fill="#94A3B8"
+    letter-spacing="-.2">
+    Clean architecture. Thoughtful engineering.
+  </text>
+
+  <!-- CTA links — understated, horizontal -->
+  <text x="58" y="372"
+    font-size="12.5" font-weight="500" fill="#3B82F6" letter-spacing=".2">
+    GitHub
+  </text>
+  <text x="108" y="372"
+    font-size="12.5" font-weight="400" fill="#4B5362">·</text>
+  <text x="120" y="372"
+    font-size="12.5" font-weight="400" fill="#94A3B8" letter-spacing=".2">
+    LinkedIn
+  </text>
+  <text x="184" y="372"
+    font-size="12.5" font-weight="400" fill="#4B5362">·</text>
+  <text x="196" y="372"
+    font-size="12.5" font-weight="400" fill="#94A3B8" letter-spacing=".2">
+    Email
+  </text>
+
+  <!-- Bottom rule -->
+  <line x1="58" y1="418" x2="420" y2="418" stroke="#21262D" stroke-width="1"/>
+</svg>

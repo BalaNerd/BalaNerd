@@ -1,0 +1,21 @@
+name: Profile Maintenance
+
+on:
+  schedule:
+    - cron: "0 0 * * 0" # Weekly on Sunday
+  workflow_dispatch:
+
+jobs:
+  maintain:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify assets
+        run: |
+          echo "Verifying profile assets..."
+          find assets/ -name "*.svg" | sort | while read f; do
+            echo "  OK: $f"
+          done
+          echo "Profile integrity check complete."

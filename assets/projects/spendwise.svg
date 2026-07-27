@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 412 320" width="412" height="320">
+  <defs>
+    <style>
+      text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .mono { font-family: 'SF Mono', 'Roboto Mono', monospace; }
+      @keyframes sw-glow {
+        0%,100%{ opacity:.7; } 50%{ opacity:1; }
+      }
+      .sw-live  { animation: sw-glow 2.6s ease-in-out infinite; }
+      .sw-live2 { animation: sw-glow 2.6s ease-in-out .6s infinite; }
+    </style>
+    <pattern id="dots-sw" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r=".7" fill="#F8FAFC" fill-opacity=".04"/>
+    </pattern>
+    <linearGradient id="area-fill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#3B82F6" stop-opacity=".18"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fade-sw" x1="0%" y1="55%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#161B22" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#161B22" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="412" height="320" rx="12" fill="#161B22"/>
+  <rect width="412" height="320" rx="12" fill="none" stroke="#30363D" stroke-width="1"/>
+
+  <!-- Illustration zone -->
+  <rect width="412" height="160" rx="12" fill="#0F1117"/>
+  <rect x="0" y="12" width="412" height="148" fill="#0F1117"/>
+  <rect width="412" height="160" fill="url(#dots-sw)"/>
+
+  <!-- Chart grid lines -->
+  <g transform="translate(32, 24)">
+    <line x1="0" y1="112" x2="348" y2="112" stroke="#1C2128" stroke-width="1"/>
+    <line x1="0" y1="80"  x2="348" y2="80"  stroke="#1C2128" stroke-width=".7" stroke-dasharray="2 5"/>
+    <line x1="0" y1="48"  x2="348" y2="48"  stroke="#1C2128" stroke-width=".7" stroke-dasharray="2 5"/>
+    <line x1="0" y1="16"  x2="348" y2="16"  stroke="#1C2128" stroke-width=".7" stroke-dasharray="2 5"/>
+
+    <!-- Multi-line chart: spending vs budget -->
+    <!-- Budget line (flat reference) -->
+    <path d="M 0 72 L 348 72"
+      fill="none" stroke="#30363D" stroke-width="1.2" stroke-dasharray="6 4"/>
+
+    <!-- Spending line — smooth bezier curve -->
+    <path d="M 0 98  C 40 88  80 76  116 62  S 190 28  232 20  S 300 24 348 16"
+      fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Area fill under spending line -->
+    <path d="M 0 98  C 40 88  80 76  116 62  S 190 28  232 20  S 300 24 348 16
+             L 348 112 L 0 112 Z"
+      fill="url(#area-fill)"/>
+
+    <!-- Savings line -->
+    <path d="M 0 106 C 60 102  120 100  180 96  S 280 88  348 82"
+      fill="none" stroke="#2EA043" stroke-width="1.5" stroke-linecap="round" stroke-opacity=".6"/>
+
+    <!-- Peak highlight node -->
+    <circle cx="232" cy="20" r="5"  fill="#0F1117" stroke="#3B82F6" stroke-width="1.5" class="sw-live"/>
+    <circle cx="232" cy="20" r="2"  fill="#3B82F6" class="sw-live"/>
+    <circle cx="232" cy="20" r="14" fill="#3B82F6" fill-opacity=".07" class="sw-live"/>
+
+    <!-- Tooltip -->
+    <rect x="216" y="-4" width="48" height="16" rx="4" fill="#1C2128"/>
+    <text x="240" y="7" font-size="8" fill="#F8FAFC" text-anchor="middle" class="mono">₹42,800</text>
+
+    <!-- X-axis labels -->
+    <text x="0"   y="126" font-size="8" fill="#4B5362" class="mono">Jan</text>
+    <text x="84"  y="126" font-size="8" fill="#4B5362" class="mono">Apr</text>
+    <text x="172" y="126" font-size="8" fill="#4B5362" class="mono">Jul</text>
+    <text x="260" y="126" font-size="8" fill="#4B5362" class="mono">Oct</text>
+    <text x="330" y="126" font-size="8" fill="#4B5362" class="mono">Dec</text>
+  </g>
+
+  <rect width="412" height="160" fill="url(#fade-sw)"/>
+
+  <!-- Content -->
+  <g transform="translate(24, 172)">
+    <rect width="62" height="18" rx="9" fill="#1C2128"/>
+    <text x="11" y="12.5" font-size="9" font-weight="600" fill="#94A3B8" letter-spacing="1.4" class="mono">FINTECH</text>
+
+    <circle cx="86" cy="9" r="3.5" fill="#2EA043" class="sw-live2"/>
+    <text x="96" y="13" font-size="10" font-weight="500" fill="#94A3B8">Active</text>
+
+    <text x="0" y="44" font-size="19" font-weight="700" fill="#F8FAFC" letter-spacing="-.5">SpendWise</text>
+
+    <text x="0" y="64" font-size="12" font-weight="400" fill="#94A3B8">Personal finance analytics with real-time budget</text>
+    <text x="0" y="80" font-size="12" font-weight="400" fill="#94A3B8">tracking, categorized spending, and AI insights.</text>
+
+    <text x="0" y="104" font-size="9.5" font-weight="400" fill="#4B5362" class="mono">FastAPI · React · PostgreSQL · Redis · Supabase</text>
+
+    <text x="0"  y="122" font-size="11" font-weight="500" fill="#3B82F6">GitHub →</text>
+    <text x="68" y="122" font-size="11" font-weight="400" fill="#4B5362">Live Demo →</text>
+  </g>
+</svg>
