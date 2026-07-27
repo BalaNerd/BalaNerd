@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" width="760" height="220">
+  <defs>
+    <style>
+      .mono { font-family: 'SFMono-Regular', 'Fira Code', 'JetBrains Mono', ui-monospace, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+      .bg { fill: #0D1117; }
+      .border { stroke: #21262D; stroke-width: 1; }
+      .node-bg { fill: #161B22; stroke: #30363D; stroke-width: 1; }
+      .node-accent { fill: #161B22; stroke: #238636; stroke-width: 1.5; }
+      .title { fill: #E6EDF3; font-size: 13px; font-weight: 600; }
+      .sub { fill: #8B949E; font-size: 10px; }
+      .code { fill: #2EA043; font-size: 10px; }
+      .wire { stroke: #30363D; stroke-width: 1; fill: none; }
+      .wire-green { stroke: #2EA043; stroke-width: 1.5; fill: none; stroke-dasharray: 4 3; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="760" height="220" rx="4" class="bg border"/>
+
+  <!-- Header -->
+  <text x="24" y="32" class="mono sub">EXHIBIT 02 // FINANCIAL PIPELINE DATAFLOW</text>
+  <text x="24" y="48" class="sans title">SpendWise — Real-Time Transaction Analytics &amp; Ledger Engine</text>
+
+  <line x1="24" y1="65" x2="736" y2="65" stroke="#21262D" stroke-width="1"/>
+
+  <!-- Step A: Tx Ingestion -->
+  <g transform="translate(24, 85)">
+    <rect width="130" height="65" rx="3" class="node-bg"/>
+    <text x="12" y="22" class="mono code">01. TX INGEST</text>
+    <text x="12" y="38" class="sans title" font-size="11">FastAPI Worker</text>
+    <text x="12" y="52" class="mono sub">1.2ms Avg Latency</text>
+  </g>
+
+  <path d="M 154 117 L 184 117" class="wire-green"/>
+
+  <!-- Step B: Aggregation -->
+  <g transform="translate(184, 85)">
+    <rect width="130" height="65" rx="3" class="node-accent"/>
+    <text x="12" y="22" class="mono code">02. SQL AGGREGATE</text>
+    <text x="12" y="38" class="sans title" font-size="11">PostgreSQL Core</text>
+    <text x="12" y="52" class="mono sub">Indexed Analytics</text>
+  </g>
+
+  <path d="M 314 117 L 344 117" class="wire"/>
+
+  <!-- Step C: Cache Layer -->
+  <g transform="translate(344, 85)">
+    <rect width="130" height="65" rx="3" class="node-bg"/>
+    <text x="12" y="22" class="mono code">03. CACHE HIT</text>
+    <text x="12" y="38" class="sans title" font-size="11">Redis Store</text>
+    <text x="12" y="52" class="mono sub">98% Cache Ratio</text>
+  </g>
+
+  <path d="M 474 117 L 504 117" class="wire-green"/>
+
+  <!-- Step D: Auth & Security -->
+  <g transform="translate(504, 85)">
+    <rect width="120" height="65" rx="3" class="node-bg"/>
+    <text x="12" y="22" class="mono code">04. JWT AUTH</text>
+    <text x="12" y="38" class="sans title" font-size="11">Supabase Auth</text>
+    <text x="12" y="52" class="mono sub">Scoped Tokens</text>
+  </g>
+
+  <path d="M 624 117 L 654 117" class="wire"/>
+
+  <!-- Step E: Client Dashboard -->
+  <g transform="translate(654, 85)">
+    <rect width="82" height="65" rx="3" class="node-bg" stroke="#58A6FF"/>
+    <text x="10" y="22" class="mono" fill="#58A6FF" font-size="10">05. CLIENT</text>
+    <text x="10" y="38" class="sans title" font-size="11">React SPA</text>
+    <text x="10" y="52" class="mono sub">Vercel Edge</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="24" y1="175" x2="736" y2="175" stroke="#21262D" stroke-width="1"/>
+  <text x="24" y="196" class="mono sub">STACK: FastAPI · React · PostgreSQL · Redis · Supabase · TailWind</text>
+  <text x="736" y="196" text-anchor="end" class="mono sub" fill="#2EA043">VERCEL DEPLOYED</text>
+</svg>

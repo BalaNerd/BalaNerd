@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" width="760" height="220">
+  <defs>
+    <style>
+      .mono { font-family: 'SFMono-Regular', 'Fira Code', 'JetBrains Mono', ui-monospace, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+      .bg { fill: #0D1117; }
+      .border { stroke: #21262D; stroke-width: 1; }
+      .node-bg { fill: #161B22; stroke: #30363D; stroke-width: 1; }
+      .node-accent { fill: #161B22; stroke: #D29922; stroke-width: 1.5; }
+      .title { fill: #E6EDF3; font-size: 13px; font-weight: 600; }
+      .sub { fill: #8B949E; font-size: 10px; }
+      .code { fill: #D29922; font-size: 10px; }
+      .wire { stroke: #30363D; stroke-width: 1; fill: none; }
+      .wire-amber { stroke: #D29922; stroke-width: 1.5; fill: none; stroke-dasharray: 5 3; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="760" height="220" rx="4" class="bg border"/>
+
+  <!-- Header -->
+  <text x="24" y="32" class="mono sub">EXHIBIT 03 // REAL-TIME EVENT MATRIX</text>
+  <text x="24" y="48" class="sans title">CanteenConnect — Queue Orchestration &amp; SLA Management</text>
+
+  <line x1="24" y1="65" x2="736" y2="65" stroke="#21262D" stroke-width="1"/>
+
+  <!-- Step A: Order Event -->
+  <g transform="translate(24, 85)">
+    <rect width="130" height="65" rx="3" class="node-bg"/>
+    <text x="12" y="22" class="mono code">01. ORDER INGRESS</text>
+    <text x="12" y="38" class="sans title" font-size="11">Node / Express</text>
+    <text x="12" y="52" class="mono sub">REST API Endpoint</text>
+  </g>
+
+  <path d="M 154 117 L 184 117" class="wire-amber"/>
+
+  <!-- Step B: Socket.io Broadcast -->
+  <g transform="translate(184, 85)">
+    <rect width="130" height="65" rx="3" class="node-accent"/>
+    <text x="12" y="22" class="mono code">02. WEBSOCKET BUS</text>
+    <text x="12" y="38" class="sans title" font-size="11">Socket.io Channel</text>
+    <text x="12" y="52" class="mono sub">Bi-directional</text>
+  </g>
+
+  <path d="M 314 117 L 344 117" class="wire"/>
+
+  <!-- Step C: SLA & Queue Tracker -->
+  <g transform="translate(344, 85)">
+    <rect width="130" height="65" rx="3" class="node-bg"/>
+    <text x="12" y="22" class="mono code">03. SLA TRACKER</text>
+    <text x="12" y="38" class="sans title" font-size="11">Queue Engine</text>
+    <text x="12" y="52" class="mono sub">&lt; 6 min Wait Time</text>
+  </g>
+
+  <path d="M 474 117 L 504 117" class="wire-amber"/>
+
+  <!-- Step D: Data Persistence -->
+  <g transform="translate(504, 85)">
+    <rect width="120" height="65" rx="3" class="node-bg"/>
+    <text x="12" y="22" class="mono code">04. WRITE LOCK</text>
+    <text x="12" y="38" class="sans title" font-size="11">MongoDB Store</text>
+    <text x="12" y="52" class="mono sub">0.4ms Write Lock</text>
+  </g>
+
+  <path d="M 624 117 L 654 117" class="wire"/>
+
+  <!-- Step E: Kitchen Terminal -->
+  <g transform="translate(654, 85)">
+    <rect width="82" height="65" rx="3" class="node-bg" stroke="#D29922"/>
+    <text x="10" y="22" class="mono" fill="#D29922" font-size="10">05. DISPATCH</text>
+    <text x="10" y="38" class="sans title" font-size="11">Kitchen Display</text>
+    <text x="10" y="52" class="mono sub">Live Alert</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="24" y1="175" x2="736" y2="175" stroke="#21262D" stroke-width="1"/>
+  <text x="24" y="196" class="mono sub">STACK: Node.js · Express · React · MongoDB · Socket.io · Redis</text>
+  <text x="736" y="196" text-anchor="end" class="mono sub" fill="#D29922">RENDER OPERATIONAL</text>
+</svg>

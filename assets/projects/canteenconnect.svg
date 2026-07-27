@@ -1,93 +1,108 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 854 200" width="854" height="200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 208" width="760" height="208">
   <defs>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
-      * { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
-      .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
-      .bg { fill: #161B22; }
-      .bg-inner { fill: #0D1117; }
-      .bg-chip { fill: #21262D; }
-      .border { stroke: #30363D; stroke-width: 1px; }
-      .text-title { fill: #3B82F6; font-size: 16px; font-weight: 600; }
-      .text-owner { fill: #8892A4; font-size: 16px; font-weight: 400; }
-      .text-main { fill: #F8FAFC; font-size: 13px; font-weight: 400; }
-      .text-muted { fill: #8892A4; font-size: 11px; font-weight: 400; }
-      .text-code { fill: #8892A4; font-size: 11px; font-weight: 400; }
-      .badge-text { fill: #F8FAFC; font-size: 10px; font-weight: 500; }
-    </style>
+    <clipPath id="canteen-clip">
+      <rect width="760" height="208" rx="8"/>
+    </clipPath>
   </defs>
 
-  <!-- Repository Card Container -->
-  <rect width="854" height="200" rx="10" class="bg border" />
-
-  <!-- Left Side: Repo Content -->
-  <g transform="translate(24, 20)">
-    <!-- Header -->
-    <path d="M 0 3 C 0 1.34 1.34 0 3 0 L 11 0 C 12.66 0 14 1.34 14 3 L 14 13 C 14 14.66 12.66 16 11 16 L 3 16 C 1.34 16 0 14.66 0 13 Z M 3 2 L 11 2 C 11.55 2 12 2.45 12 3 L 12 13 C 12 13.55 11.55 14 11 14 L 3 14 C 2.45 14 2 13.55 2 13 L 2 3 C 2 2.45 2.45 2 3 2 Z" fill="#8892A4" />
-    <text x="22" y="14" class="text-owner">BalaNerd / </text>
-    <text x="108" y="14" class="text-title">canteenconnect</text>
-
-    <!-- Badges -->
-    <rect x="235" y="0" width="54" height="18" rx="9" fill="#21262D" stroke="#30363D" stroke-width="1" />
-    <text x="262" y="12" class="badge-text" text-anchor="middle">Public</text>
-
-    <rect x="296" y="0" width="80" height="18" rx="9" fill="#1C2B1D" stroke="#2EA043" stroke-width="1" />
-    <text x="336" y="12" fill="#2EA043" font-size="10" font-weight="600" text-anchor="middle">● Production</text>
-
-    <rect x="383" y="0" width="46" height="18" rx="9" fill="#1E293B" stroke="#3B82F6" stroke-width="1" />
-    <text x="406" y="12" fill="#3B82F6" font-size="10" font-weight="600" text-anchor="middle">v1.0</text>
-
-    <!-- Problem & Solution Description -->
-    <text x="0" y="44" class="text-main">Smart canteen management platform with real-time ordering &amp; queue optimization.</text>
-    <text x="0" y="64" class="text-muted">Socket.io real-time order status, kitchen coordination &amp; SLA wait-time reduction.</text>
-
-    <!-- Tech Chips Grid -->
-    <g transform="translate(0, 84)">
-      <rect x="0" y="0" width="60" height="22" rx="4" class="bg-chip border" />
-      <text x="30" y="14" class="text-code mono" text-anchor="middle">Node.js</text>
-
-      <rect x="66" y="0" width="58" height="22" rx="4" class="bg-chip border" />
-      <text x="95" y="14" class="text-code mono" text-anchor="middle">Express</text>
-
-      <rect x="130" y="0" width="52" height="22" rx="4" class="bg-chip border" />
-      <text x="156" y="14" class="text-code mono" text-anchor="middle">React</text>
-
-      <rect x="188" y="0" width="68" height="22" rx="4" class="bg-chip border" />
-      <text x="222" y="14" class="text-code mono" text-anchor="middle">MongoDB</text>
-
-      <rect x="262" y="0" width="66" height="22" rx="4" class="bg-chip border" />
-      <text x="295" y="14" class="text-code mono" text-anchor="middle">Socket.io</text>
-
-      <rect x="334" y="0" width="50" height="22" rx="4" class="bg-chip border" />
-      <text x="359" y="14" class="text-code mono" text-anchor="middle">Redis</text>
-    </g>
-
-    <!-- Meta / Language Row -->
-    <g transform="translate(0, 126)">
-      <circle cx="6" cy="6" r="5" fill="#F1E05A" /> <!-- JS color -->
-      <text x="18" y="10" class="text-muted">JavaScript</text>
-      <text x="90" y="10" class="text-muted">★ 8</text>
-      <text x="130" y="10" class="text-muted">⑂ 2</text>
-      <text x="170" y="10" class="text-muted mono">main (f8e7d6c)</text>
-    </g>
+  <g clip-path="url(#canteen-clip)">
+    <rect width="760" height="208" fill="#161B22"/>
+    <rect x="524" y="0" width="236" height="208" fill="#0D1117"/>
+    <line x1="524" y1="0" x2="524" y2="208" stroke="#21262D" stroke-width="1"/>
+    <!-- Amber top accent -->
+    <rect x="0" y="0" width="760" height="3" fill="#9E6A03"/>
   </g>
 
-  <!-- Right Side: Architecture Snippet Preview -->
-  <g transform="translate(554, 20)">
-    <rect width="276" height="160" rx="8" class="bg-inner border" />
-    <rect width="276" height="24" rx="8" fill="#21262D" />
-    <circle cx="12" cy="12" r="3.5" fill="#FF5F56" />
-    <circle cx="22" cy="12" r="3.5" fill="#FFBD2E" />
-    <circle cx="32" cy="12" r="3.5" fill="#27C93F" />
-    <text x="138" y="16" class="text-code mono" text-anchor="middle" font-size="10">queue_orchestrator.js</text>
-
-    <g transform="translate(12, 38)">
-      <text x="0" y="12" fill="#2EA043" font-size="10" class="mono">[WS] Socket.io Room: Active</text>
-      <text x="0" y="28" fill="#3B82F6" font-size="10" class="mono">[QUEUE] Active Orders: 4 in queue</text>
-      <text x="0" y="44" fill="#2EA043" font-size="10" class="mono">[SLA] Est Wait Time: 6 mins</text>
-      <text x="0" y="60" fill="#8892A4" font-size="10" class="mono">[DB] Mongo Write Lock: 0.4ms</text>
-      <text x="0" y="76" fill="#8892A4" font-size="10" class="mono">[REDIS] Session Cache: Synced</text>
-      <text x="0" y="92" fill="#3B82F6" font-size="10" class="mono">[PUSH] Kitchen Alert: Dispatched</text>
-    </g>
+  <!-- Repo icon -->
+  <g transform="translate(28, 26)">
+    <path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z" fill="#8B949E"/>
   </g>
+
+  <!-- Repo name -->
+  <text x="52" y="41"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="15" font-weight="600" fill="#D29922">BalaNerd / Canteen_Connect</text>
+
+  <!-- Badges -->
+  <rect x="290" y="26" width="50" height="18" rx="10" fill="none" stroke="#30363D" stroke-width="1"/>
+  <text x="315" y="39" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#8B949E">Public</text>
+
+  <rect x="348" y="26" width="90" height="18" rx="10" fill="none" stroke="#9E6A03" stroke-width="1"/>
+  <circle cx="362" cy="35" r="3.5" fill="#D29922"/>
+  <text x="402" y="39" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#D29922">Production</text>
+
+  <rect x="446" y="26" width="46" height="18" rx="10"
+    fill="#9E6A03" fill-opacity="0.15" stroke="#9E6A03" stroke-width="1"/>
+  <text x="469" y="39" text-anchor="middle"
+    font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#D29922">v1.0</text>
+
+  <!-- Description -->
+  <text x="28" y="66"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="13" fill="#E6EDF3">Smart canteen management with real-time ordering, queue optimization,</text>
+  <text x="28" y="84"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="13" fill="#8B949E">&amp; SLA tracking. Socket.io broadcast + kitchen coordination system.</text>
+
+  <!-- Tech chips -->
+  <g transform="translate(28, 101)">
+    <rect x="0"   y="0" width="54" height="22" rx="4" fill="#21262D" stroke="#30363D" stroke-width="1"/>
+    <text x="27"  y="15" text-anchor="middle" font-family="'SF Mono','Fira Code',ui-monospace,monospace" font-size="10" fill="#8B949E">Node.js</text>
+
+    <rect x="62"  y="0" width="54" height="22" rx="4" fill="#21262D" stroke="#30363D" stroke-width="1"/>
+    <text x="89"  y="15" text-anchor="middle" font-family="'SF Mono','Fira Code',ui-monospace,monospace" font-size="10" fill="#8B949E">Express</text>
+
+    <rect x="124" y="0" width="46" height="22" rx="4" fill="#21262D" stroke="#30363D" stroke-width="1"/>
+    <text x="147" y="15" text-anchor="middle" font-family="'SF Mono','Fira Code',ui-monospace,monospace" font-size="10" fill="#8B949E">React</text>
+
+    <rect x="178" y="0" width="62" height="22" rx="4" fill="#21262D" stroke="#30363D" stroke-width="1"/>
+    <text x="209" y="15" text-anchor="middle" font-family="'SF Mono','Fira Code',ui-monospace,monospace" font-size="10" fill="#8B949E">MongoDB</text>
+
+    <rect x="248" y="0" width="66" height="22" rx="4" fill="#21262D" stroke="#30363D" stroke-width="1"/>
+    <text x="281" y="15" text-anchor="middle" font-family="'SF Mono','Fira Code',ui-monospace,monospace" font-size="10" fill="#8B949E">Socket.io</text>
+
+    <rect x="322" y="0" width="44" height="22" rx="4" fill="#21262D" stroke="#30363D" stroke-width="1"/>
+    <text x="344" y="15" text-anchor="middle" font-family="'SF Mono','Fira Code',ui-monospace,monospace" font-size="10" fill="#8B949E">Redis</text>
+  </g>
+
+  <!-- Separator -->
+  <line x1="28" y1="140" x2="508" y2="140" stroke="#21262D" stroke-width="1"/>
+
+  <!-- Stats -->
+  <g transform="translate(28, 154)">
+    <circle cx="6" cy="6" r="5" fill="#F1E05A"/>
+    <text x="18"  y="10" font-family="-apple-system, sans-serif" font-size="12" fill="#8B949E">JavaScript</text>
+    <text x="88"  y="10" font-family="-apple-system, sans-serif" font-size="12" fill="#8B949E">★ 8</text>
+    <text x="126" y="10" font-family="-apple-system, sans-serif" font-size="12" fill="#8B949E">⑂ 2</text>
+    <text x="166" y="10" font-family="'SF Mono','Fira Code',ui-monospace,monospace" font-size="11" fill="#8B949E">main · f8e7d6c</text>
+  </g>
+
+  <!-- Sidebar content -->
+  <text x="540" y="44"
+    font-family="'SF Mono','Fira Code',ui-monospace,monospace"
+    font-size="9.5" font-weight="600" letter-spacing="1.5" fill="#6E7681">ARCHITECTURE</text>
+  <line x1="536" y1="54" x2="744" y2="54" stroke="#21262D" stroke-width="1"/>
+
+  <rect x="536" y="66" width="3" height="14" rx="1.5" fill="#D29922"/>
+  <text x="546" y="77" font-family="'SF Mono','Fira Code',ui-monospace,monospace" font-size="10.5" fill="#6E7681">Queue</text>
+  <text x="744" y="77" text-anchor="end" font-family="'SF Mono','Fira Code',ui-monospace,monospace" font-size="10.5" fill="#E6EDF3">Real-time</text>
+
+  <rect x="536" y="90" width="3" height="14" rx="1.5" fill="#D29922"/>
+  <text x="546" y="101" font-family="'SF Mono','Fira Code',ui-monospace,monospace" font-size="10.5" fill="#6E7681">Avg Wait</text>
+  <text x="744" y="101" text-anchor="end" font-family="'SF Mono','Fira Code',ui-monospace,monospace" font-size="10.5" fill="#E6EDF3">&lt; 6 min</text>
+
+  <rect x="536" y="114" width="3" height="14" rx="1.5" fill="#1F6FEB"/>
+  <text x="546" y="125" font-family="'SF Mono','Fira Code',ui-monospace,monospace" font-size="10.5" fill="#6E7681">Transport</text>
+  <text x="744" y="125" text-anchor="end" font-family="'SF Mono','Fira Code',ui-monospace,monospace" font-size="10.5" fill="#58A6FF">Socket.io</text>
+
+  <rect x="536" y="138" width="3" height="14" rx="1.5" fill="#1F6FEB"/>
+  <text x="546" y="149" font-family="'SF Mono','Fira Code',ui-monospace,monospace" font-size="10.5" fill="#6E7681">Orders / hr</text>
+  <text x="744" y="149" text-anchor="end" font-family="'SF Mono','Fira Code',ui-monospace,monospace" font-size="10.5" fill="#58A6FF">40+</text>
+
+  <rect x="536" y="162" width="3" height="14" rx="1.5" fill="#3FB950"/>
+  <text x="546" y="173" font-family="'SF Mono','Fira Code',ui-monospace,monospace" font-size="10.5" fill="#6E7681">Deployed on</text>
+  <text x="744" y="173" text-anchor="end" font-family="'SF Mono','Fira Code',ui-monospace,monospace" font-size="10.5" fill="#3FB950">Render</text>
+
+  <!-- Card border -->
+  <rect width="760" height="208" rx="8" fill="none" stroke="#30363D" stroke-width="1"/>
 </svg>

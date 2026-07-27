@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" width="760" height="220">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="50%" stop-color="#161B22"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+
+    <linearGradient id="glow-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#1D4ED8" stop-opacity="0"/>
+    </linearGradient>
+
+    <style>
+      .mono { font-family: 'SFMono-Regular', 'JetBrains Mono', 'Fira Code', ui-monospace, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif; }
+      .name { font-size: 32px; font-weight: 800; fill: #F8FAFC; letter-spacing: -0.5px; }
+      .title { font-size: 14px; font-weight: 600; fill: #3B82F6; letter-spacing: 0.5px; }
+      .subtitle { font-size: 13px; fill: #94A3B8; }
+      .chip-bg { fill: #21262D; stroke: #30363D; stroke-width: 1; }
+      .chip-text { font-size: 11px; font-weight: 500; fill: #E2E8F0; }
+      .status-dot { fill: #10B981; }
+    </style>
+  </defs>
+
+  <!-- Main Background Container -->
+  <rect width="760" height="220" rx="12" fill="url(#bg-grad)" stroke="#30363D" stroke-width="1"/>
+
+  <!-- Top Decorative Accent Bar -->
+  <rect width="760" height="4" rx="2" fill="url(#accent-grad)"/>
+
+  <!-- Background Decorative Glowing Grid -->
+  <g opacity="0.15">
+    <circle cx="620" cy="110" r="140" fill="url(#glow-blue)"/>
+    <line x1="480" y1="20" x2="720" y2="200" stroke="#3B82F6" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="520" y1="20" x2="760" y2="180" stroke="#8B5CF6" stroke-width="1" stroke-dasharray="4 4"/>
+    <circle cx="560" cy="70" r="4" fill="#3B82F6"/>
+    <circle cx="640" cy="130" r="5" fill="#8B5CF6"/>
+    <circle cx="690" cy="80" r="3" fill="#EC4899"/>
+    <line x1="560" y1="70" x2="640" y2="130" stroke="#3B82F6" stroke-width="1"/>
+    <line x1="640" y1="130" x2="690" y2="80" stroke="#8B5CF6" stroke-width="1"/>
+  </g>
+
+  <!-- Left Content Column -->
+  <g transform="translate(36, 32)">
+    <!-- Status Pill -->
+    <g transform="translate(0, 0)">
+      <rect width="185" height="24" rx="12" fill="#064E3B" stroke="#10B981" stroke-width="1" stroke-opacity="0.4"/>
+      <circle cx="14" cy="12" r="4" class="status-dot"/>
+      <text x="26" y="16" class="sans" font-size="11" font-weight="600" fill="#34D399">Available for Opportunities</text>
+    </g>
+
+    <!-- Name & Primary Identity -->
+    <text x="0" y="58" class="sans name">S Bala Raju</text>
+
+    <!-- Role Subtitle -->
+    <text x="0" y="82" class="sans title">Backend Engineer  •  AI Engineer  •  Full Stack Architect</text>
+
+    <!-- Bio Statement -->
+    <text x="0" y="104" class="sans subtitle">Architecting high-performance backend platforms, real-time data pipelines,</text>
+    <text x="0" y="122" class="sans subtitle">and production-grade AI systems with modern software architecture.</text>
+
+    <!-- Badges / Location Tag -->
+    <g transform="translate(0, 142)">
+      <!-- Location -->
+      <rect width="165" height="26" rx="6" class="chip-bg"/>
+      <text x="12" y="17" class="sans chip-text">📍 Chennai, India (UTC+5:30)</text>
+
+      <!-- Education Spec -->
+      <rect x="175" y="0" width="160" height="26" rx="6" class="chip-bg"/>
+      <text x="187" y="17" class="sans chip-text">🎓 B.Tech CSE · CGPA 8.61</text>
+
+      <!-- Focus Tag -->
+      <rect x="345" y="0" width="135" height="26" rx="6" fill="#1E1B4B" stroke="#6366F1" stroke-width="1"/>
+      <text x="357" y="17" class="sans chip-text" fill="#A5B4FC">⚡ MLOps &amp; FastAPI</text>
+    </g>
+  </g>
+
+  <!-- Right Visual Feature Matrix -->
+  <g transform="translate(540, 42)">
+    <rect width="180" height="136" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+
+    <!-- Header bar -->
+    <rect width="180" height="28" rx="10" fill="#21262D"/>
+    <rect y="18" width="180" height="10" fill="#21262D"/>
+    <circle cx="14" cy="14" r="3.5" fill="#EF4444"/>
+    <circle cx="25" cy="14" r="3.5" fill="#F59E0B"/>
+    <circle cx="36" cy="14" r="3.5" fill="#10B981"/>
+    <text x="90" y="18" text-anchor="middle" class="mono" font-size="10" fill="#94A3B8">system_status.log</text>
+
+    <!-- Log Items -->
+    <g transform="translate(14, 44)">
+      <text x="0" y="10" class="mono" font-size="10" fill="#34D399">[OK] API Core: Operational</text>
+      <text x="0" y="28" class="mono" font-size="10" fill="#60A5FA">[AI] RAG Vector Engine: 12ms</text>
+      <text x="0" y="46" class="mono" font-size="10" fill="#A78BFA">[DB] Postgres &amp; Redis: Synced</text>
+      <text x="0" y="64" class="mono" font-size="10" fill="#FBBF24">[ML] Drift Index: 0.02 (Stable)</text>
+      <text x="0" y="80" class="mono" font-size="10" fill="#34D399">[SYS] 99.98% Latency SLA</text>
+    </g>
+  </g>
+</svg>

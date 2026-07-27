@@ -1,90 +1,203 @@
-<!-- 
-  S Bala Raju — Developer Workspace Profile
-  Built with GitHub Next, Linear & Raycast UI Principles
--->
+<div align="center">
+  <img src="assets/hero-banner.svg" alt="S Bala Raju Header Banner" width="760" />
+</div>
 
-<!-- ═══════════════════════════════════════════════════
-     §1 · HERO WORKSPACE & COMMAND PALETTE
-════════════════════════════════════════════════════ -->
+<br/>
 
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<p align="center">
+  <a href="https://github.com/BalaNerd">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile" />
+  </a>
+  &nbsp;
+  <a href="https://www.linkedin.com/in/s-balaraju/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Profile" />
+  </a>
+  &nbsp;
+  <a href="mailto:balaraju1805@gmail.com">
+    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Direct Email" />
+  </a>
+</p>
+
+<br/>
+
+<!-- ===================================================
+     §1 · ABOUT ME / EXECUTIVE SPECIFICATION
+==================================================== -->
+
+### ⚡ Executive Profile
+
+```
+┌───────────────────────────┬─────────────────────────────────────────────────────────────┐
+│ Specification             │ Details                                                     │
+├───────────────────────────┼─────────────────────────────────────────────────────────────┤
+│ 📍 Location               │ Chennai, India (UTC +05:30)                                 │
+│ 🎓 Education              │ B.Tech CSE (Big Data Analytics) · SRM IST (CGPA: 8.61/10.0) │
+│ 💼 Internship             │ Data Scientist & Analyst Intern @ Zidio Development         │
+│ 🔨 Active Focus           │ Aegis Sentinel v2 (MLOps Drift) & SpendWise Beta            │
+│ 🔬 Research Focus         │ Distributed Systems · Zero-Trust Security · RAG Pipelines   │
+└───────────────────────────┴─────────────────────────────────────────────────────────────┘
+```
+
+<br/>
+
+<!-- ===================================================
+     §2 · FEATURED REPOSITORIES SHOWCASE
+==================================================== -->
+
+### 📦 Featured Repository Projects
+
+<div align="center">
+  <a href="https://github.com/BalaNerd/aegis-sentinel">
+    <img src="assets/projects/aegis-card.svg" alt="Aegis Sentinel Repository Card" width="760" />
+  </a>
+</div>
+
+<p align="center">
+  <a href="https://github.com/BalaNerd/aegis-sentinel">
+    <img src="https://img.shields.io/badge/View_Repository-1F6FEB?style=for-the-badge&logo=github&logoColor=white" alt="Aegis Code" />
+  </a>
+</p>
+
+<br/>
+
+<div align="center">
+  <a href="https://github.com/BalaNerd/spendwise">
+    <img src="assets/projects/spendwise-card.svg" alt="SpendWise Repository Card" width="760" />
+  </a>
+</div>
+
+<p align="center">
+  <a href="https://github.com/BalaNerd/spendwise">
+    <img src="https://img.shields.io/badge/View_Repository-10B981?style=for-the-badge&logo=github&logoColor=white" alt="SpendWise Code" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://spendwise-two-kappa.vercel.app/">
+    <img src="https://img.shields.io/badge/Live_Demo-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="SpendWise Demo" />
+  </a>
+</p>
+
+<br/>
+
+<div align="center">
+  <a href="https://github.com/BalaNerd/Canteen_Connect">
+    <img src="assets/projects/canteen-card.svg" alt="CanteenConnect Repository Card" width="760" />
+  </a>
+</div>
+
+<p align="center">
+  <a href="https://github.com/BalaNerd/Canteen_Connect">
+    <img src="https://img.shields.io/badge/View_Repository-F59E0B?style=for-the-badge&logo=github&logoColor=white" alt="CanteenConnect Code" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://canteen-connect.onrender.com">
+    <img src="https://img.shields.io/badge/Live_Demo-46E3B7?style=for-the-badge&logo=render&logoColor=black" alt="CanteenConnect Demo" />
+  </a>
+</p>
+
+<br/>
+
+<!-- ===================================================
+     §3 · TECHNOLOGY ECOSYSTEM WITH OFFICIAL LOGOS
+==================================================== -->
+
+### 🛠️ Technology Stack & Ecosystem
+
+<table width="100%">
   <tr>
-    <td width="50%" valign="top" align="left">
-      <h1>S Bala Raju</h1>
-      <p><strong>Backend Engineer · AI Engineer · Full Stack Developer</strong></p>
-      <p>Building intelligent software systems, scalable backend platforms, data pipelines, and production AI products.</p>
-      <p>📍 <em>Chennai, India (UTC +05:30)</em></p>
-      <p>
-        <a href="https://github.com/BalaNerd"><code>GitHub</code></a> &nbsp;•&nbsp;
-        <a href="https://www.linkedin.com/in/s-balaraju/"><code>LinkedIn</code></a> &nbsp;•&nbsp;
-        <a href="mailto:balaraju1805@gmail.com"><code>Email</code></a>
-      </p>
+    <td width="20%" valign="top"><strong>⚙️ Backend Engine</strong></td>
+    <td width="80%">
+      <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+      <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
+      <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
+      <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+      <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
+      <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
+      <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C" />
     </td>
-    <td width="50%" valign="top" align="right">
-      <img src="assets/components/command-palette.svg" alt="Command Palette Widget" width="420" />
+  </tr>
+  <tr>
+    <td width="20%" valign="top"><strong>🤖 AI &amp; Data Science</strong></td>
+    <td width="80%">
+      <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
+      <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" />
+      <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="scikit-learn" />
+      <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
+      <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
+      <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
+    </td>
+  </tr>
+  <tr>
+    <td width="20%" valign="top"><strong>🌐 Frontend UI</strong></td>
+    <td width="80%">
+      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+      <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+      <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+      <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+      <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+    </td>
+  </tr>
+  <tr>
+    <td width="20%" valign="top"><strong>🛢️ Databases &amp; Caching</strong></td>
+    <td width="80%">
+      <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+      <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
+      <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis" />
+      <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+      <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+    </td>
+  </tr>
+  <tr>
+    <td width="20%" valign="top"><strong>☁️ Cloud &amp; DevOps</strong></td>
+    <td width="80%">
+      <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS" />
+      <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+      <img src="https://img.shields.io/badge/Git-F44F26?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+      <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
+      <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code" />
+      <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" />
     </td>
   </tr>
 </table>
 
 <br/>
 
-<!-- ═══════════════════════════════════════════════════
-     §2 · WHO I AM
-════════════════════════════════════════════════════ -->
+<!-- ===================================================
+     §4 · ENGINEERING PHILOSOPHY & OPERATIONAL CARDS
+==================================================== -->
 
-> I build software that solves real-world problems through clean system architecture, backend engineering, artificial intelligence, analytics, and thoughtful user experience. Work focuses on quality over quantity.
+### 📐 Engineering Philosophy
 
-<br/>
-
-<!-- ═══════════════════════════════════════════════════
-     §3 · ENGINEERING PHILOSOPHY
-════════════════════════════════════════════════════ -->
-
-### ⚡ Execution Pipeline
-
-<div align="center">
-  <img src="assets/components/pipeline-bar.svg" alt="Engineering Execution Pipeline" width="854" />
-</div>
-
-<br/>
-
-<!-- ═══════════════════════════════════════════════════
-     §4 · FEATURED REPOSITORIES
-════════════════════════════════════════════════════ -->
-
-### 📦 Featured Repositories
-
-<div align="center">
-  <a href="https://github.com/BalaNerd/aegis-sentinel">
-    <img src="assets/projects/aegis-sentinel.svg" alt="Aegis Sentinel Repository" width="854" />
-  </a>
-</div>
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h4>🔍 1. Observability First</h4>
+      <p>Every microservice ships with structured JSON logging, health check endpoints, and automated drift telemetry built into the pipeline at inception.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🛡️ 2. Boundary Integrity</h4>
+      <p>Strict schema validation, idempotent operations, and zero-trust authentication defaults across every public &amp; private API boundary.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>⚡ 3. Minimal Surface Area</h4>
+      <p>Expose explicit, minimal endpoints while keeping internal system complexity strictly encapsulated inside optimized internal workers.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🚀 4. Continuous Iteration</h4>
+      <p>Deploy lean deterministic baselines to production first, then continuously iterate based on empirical telemetry &amp; performance profiling.</p>
+    </td>
+  </tr>
+</table>
 
 <br/>
 
-<div align="center">
-  <a href="https://github.com/BalaNerd/spendwise">
-    <img src="assets/projects/spendwise.svg" alt="SpendWise Repository" width="854" />
-  </a>
-  <p><a href="https://spendwise-two-kappa.vercel.app/">Live Demo</a></p>
-</div>
+<!-- ===================================================
+     §5 · CAREER & ACADEMIC CHRONOLOGY
+==================================================== -->
 
-<br/>
-
-<div align="center">
-  <a href="https://github.com/BalaNerd/Canteen_Connect">
-    <img src="assets/projects/canteenconnect.svg" alt="CanteenConnect Repository" width="854" />
-  </a>
-  <p><a href="https://canteen-connect.onrender.com">Live Demo</a></p>
-</div>
-
-<br/>
-
-<!-- ═══════════════════════════════════════════════════
-     §5 · EXPERIENCE & EDUCATION
-════════════════════════════════════════════════════ -->
-
-### 🏢 Experience &amp; Education
+### 🎓 Experience & Education
 
 <table width="100%">
   <tr>
@@ -93,28 +206,28 @@
       <p><strong>SRM Institute of Science and Technology</strong><br/>
       <code>B.Tech Computer Science Engineering</code><br/>
       Specialization: <em>Big Data Analytics</em><br/>
-      CGPA: <code>8.61</code> &nbsp;•&nbsp; Expected: <code>2027</code></p>
+      CGPA: <code>8.61 / 10.0</code> &nbsp;·&nbsp; Expected: <code>2027</code></p>
     </td>
     <td width="50%" valign="top">
       <h4>💼 Internship</h4>
       <p><strong>Zidio Development</strong><br/>
       <code>Data Scientist &amp; Analyst Intern</code><br/>
-      Key Focus:<br/>
-      • Applied Machine Learning &amp; Analytics<br/>
-      • Production Backend Pipeline Optimization</p>
+      Key Responsibilities:<br/>
+      • Applied Machine Learning &amp; Feature Pipelines<br/>
+      • Production Backend Performance Tuning</p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h4>🏆 Competitions &amp; Hackathons</h4>
+      <h4>🏆 Hackathons &amp; Sprints</h4>
       <p>• <strong>Hack the Horizon</strong> (24h Full Stack Sprint)<br/>
       • <strong>NumeroHack</strong> (Mathematical Modeling)<br/>
-      • <strong>Analytical Problem Solving</strong></p>
+      • Analytical Problem Solving Challenge</p>
     </td>
     <td width="50%" valign="top">
       <h4>📜 Certifications</h4>
       <p>• <strong>AWS Cloud Foundations</strong><br/>
-      • <strong>NPTEL Problem Solving &amp; Data Structures</strong><br/>
+      • <strong>NPTEL Data Structures &amp; Algorithms</strong><br/>
       • <strong>Data Analytics Specialization</strong></p>
     </td>
   </tr>
@@ -122,140 +235,33 @@
 
 <br/>
 
-<!-- ═══════════════════════════════════════════════════
-     §6 · ENGINEERING DOMAINS & TECH ECOSYSTEM
-════════════════════════════════════════════════════ -->
+<!-- ===================================================
+     §6 · GITHUB TELEMETRY & ACTIVITY GRAPH
+==================================================== -->
 
-### ⚙️ Technology Ecosystem
+### 📊 GitHub Telemetry & Activity
 
-<table width="100%">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td width="20%" valign="top"><strong>Backend</strong></td>
-    <td width="80%">
-      <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=flat-square" alt="Python" />
-      <img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white&style=flat-square" alt="FastAPI" />
-      <img src="https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white&style=flat-square" alt="Flask" />
-      <img src="https://img.shields.io/badge/Node.js-6DA55F?logo=node.js&logoColor=white&style=flat-square" alt="Node.js" />
-      <img src="https://img.shields.io/badge/Express-000000?logo=express&logoColor=white&style=flat-square" alt="Express" />
-      <img src="https://img.shields.io/badge/Java-007396?logo=java&logoColor=white&style=flat-square" alt="Java" />
-      <img src="https://img.shields.io/badge/C-00599C?logo=c&logoColor=white&style=flat-square" alt="C" />
-      <img src="https://img.shields.io/badge/REST%20APIs-8A2BE2?style=flat-square" alt="REST APIs" />
+    <td width="50%" align="center">
+      <img src="https://github-readme-stats.vercel.app/api?username=BalaNerd&show_icons=true&theme=transparent&bg_color=0D1117&border_color=30363D&icon_color=3B82F6&title_color=F8FAFC&text_color=94A3B8&hide_border=false&ring_color=3B82F6" alt="GitHub Stats" width="98%" />
     </td>
-  </tr>
-  <tr>
-    <td width="20%" valign="top"><strong>Frontend</strong></td>
-    <td width="80%">
-      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat-square" alt="JavaScript" />
-      <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square" alt="TypeScript" />
-      <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=flat-square" alt="React" />
-      <img src="https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white&style=flat-square" alt="Next.js" />
-      <img src="https://img.shields.io/badge/Tailwind%20CSS-38B2AC?logo=tailwindcss&logoColor=white&style=flat-square" alt="Tailwind CSS" />
-    </td>
-  </tr>
-  <tr>
-    <td width="20%" valign="top"><strong>AI &amp; Data</strong></td>
-    <td width="80%">
-      <img src="https://img.shields.io/badge/Machine%20Learning-FF6F00?logo=machinelearning&logoColor=white&style=flat-square" alt="Machine Learning" />
-      <img src="https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white&style=flat-square" alt="PyTorch" />
-      <img src="https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white&style=flat-square" alt="TensorFlow" />
-      <img src="https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white&style=flat-square" alt="scikit-learn" />
-      <img src="https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white&style=flat-square" alt="OpenCV" />
-      <img src="https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white&style=flat-square" alt="Pandas" />
-      <img src="https://img.shields.io/badge/Big%20Data-4479A1?style=flat-square" alt="Big Data Analytics" />
-    </td>
-  </tr>
-  <tr>
-    <td width="20%" valign="top"><strong>Databases</strong></td>
-    <td width="80%">
-      <img src="https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white&style=flat-square" alt="PostgreSQL" />
-      <img src="https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=white&style=flat-square" alt="Supabase" />
-      <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white&style=flat-square" alt="MySQL" />
-      <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white&style=flat-square" alt="MongoDB" />
-      <img src="https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white&style=flat-square" alt="Redis" />
-    </td>
-  </tr>
-  <tr>
-    <td width="20%" valign="top"><strong>Cloud &amp; Tools</strong></td>
-    <td width="80%">
-      <img src="https://img.shields.io/badge/AWS-232F3E?logo=amazon-aws&logoColor=white&style=flat-square" alt="AWS" />
-      <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=flat-square" alt="Docker" />
-      <img src="https://img.shields.io/badge/Git-F44F26?logo=git&logoColor=white&style=flat-square" alt="Git" />
-      <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=github-actions&logoColor=white&style=flat-square" alt="GitHub Actions" />
-      <img src="https://img.shields.io/badge/VS%20Code-007ACC?logo=visual-studio-code&logoColor=white&style=flat-square" alt="VS Code" />
-      <img src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white&style=flat-square" alt="Figma" />
+    <td width="50%" align="center">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=BalaNerd&layout=compact&theme=transparent&bg_color=0D1117&border_color=30363D&title_color=F8FAFC&text_color=94A3B8&hide_border=false" alt="Top Languages" width="98%" />
     </td>
   </tr>
 </table>
 
 <br/>
 
-<!-- ═══════════════════════════════════════════════════
-     §7 · GITHUB TELEMETRY & ACTIVITY
-════════════════════════════════════════════════════ -->
-
-### 📊 Telemetry &amp; Activity
-
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=BalaNerd&bg_color=0D1117&color=8892A4&line=3B82F6&point=F8FAFC&area=true&area_color=3B82F6&hide_border=true&radius=8" alt="GitHub Contribution Graph" width="854" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=BalaNerd&bg_color=0D1117&color=94A3B8&line=3B82F6&point=F8FAFC&area=true&area_color=3B82F6&hide_border=true&radius=8" alt="GitHub Activity Graph" width="760" />
 </div>
 
 <br/>
 
-<table width="100%">
-  <tr>
-    <td width="50%" align="center">
-      <img src="https://github-readme-stats.vercel.app/api?username=BalaNerd&show_icons=true&theme=transparent&bg_color=161B22&border_color=30363D&icon_color=3B82F6&title_color=F8FAFC&text_color=8892A4&hide_border=false&ring_color=3B82F6" alt="GitHub Stats" width="100%" />
-    </td>
-    <td width="50%" align="center">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=BalaNerd&layout=compact&theme=transparent&bg_color=161B22&border_color=30363D&title_color=F8FAFC&text_color=8892A4&hide_border=false" alt="Top Languages" width="100%" />
-    </td>
-  </tr>
-</table>
+---
 
-<br/>
-
-<!-- ═══════════════════════════════════════════════════
-     §8 · CURRENT FOCUS & ROADMAP
-════════════════════════════════════════════════════ -->
-
-### 🎯 Workspace Focus
-
-<table width="100%">
-  <tr>
-    <td width="25%" valign="top">
-      <strong>🔨 Building</strong><br/>
-      <small>Aegis Sentinel v2 MLOps drift pipeline</small>
-    </td>
-    <td width="25%" valign="top">
-      <strong>📚 Learning</strong><br/>
-      <small>Distributed systems &amp; kernel networking</small>
-    </td>
-    <td width="25%" valign="top">
-      <strong>🔬 Research</strong><br/>
-      <small>Zero-trust security &amp; RAG optimization</small>
-    </td>
-    <td width="25%" valign="top">
-      <strong>🚀 Next</strong><br/>
-      <small>Public beta release for SpendWise</small>
-    </td>
-  </tr>
-</table>
-
-<br/>
-
-<!-- ═══════════════════════════════════════════════════
-     §9 · FOOTER & ACTIONS
-════════════════════════════════════════════════════ -->
-
-<table width="100%">
-  <tr>
-    <td align="left">
-      <code>balaraju1805@gmail.com</code> &nbsp;•&nbsp;
-      <a href="https://github.com/BalaNerd">github.com/BalaNerd</a> &nbsp;•&nbsp;
-      <a href="https://www.linkedin.com/in/s-balaraju/">linkedin.com/in/s-balaraju</a>
-    </td>
-    <td align="right">
-      <small>S Bala Raju · Workspace v3.0</small>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <p><strong>S Bala Raju</strong> · <code>balaraju1805@gmail.com</code> · <a href="https://github.com/BalaNerd">github.com/BalaNerd</a> · <a href="https://www.linkedin.com/in/s-balaraju/">linkedin.com/in/s-balaraju</a></p>
+</div>

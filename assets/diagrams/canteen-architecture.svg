@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 120" width="720" height="120">
+  <defs>
+    <style>
+      .mono { font-family: 'SFMono-Regular', 'Fira Code', 'JetBrains Mono', monospace; font-size: 11px; }
+      .box { fill: #161B22; stroke: #30363D; stroke-width: 1; }
+      .box-active { fill: #161B22; stroke: #D29922; stroke-width: 1; }
+      .text-title { fill: #E6EDF3; font-weight: 600; }
+      .text-sub { fill: #8B949E; font-size: 9.5px; }
+      .arrow { stroke: #484F58; stroke-width: 1; fill: none; marker-end: url(#arr); }
+      .arrow-amber { stroke: #D29922; stroke-width: 1; fill: none; marker-end: url(#arr-amber); }
+    </style>
+    <marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#484F58" />
+    </marker>
+    <marker id="arr-amber" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#D29922" />
+    </marker>
+  </defs>
+
+  <rect width="720" height="120" rx="4" fill="#0D1117" stroke="#21262D" stroke-width="1" />
+
+  <text x="16" y="22" class="mono text-sub">ARCHITECTURE DIAGRAM // CANTEENCONNECT EVENT BUS</text>
+
+  <!-- Node 1: Ingress -->
+  <g transform="translate(16, 40)">
+    <rect width="120" height="55" rx="3" class="box" />
+    <text x="60" y="24" text-anchor="middle" class="mono text-title">Order API</text>
+    <text x="60" y="38" text-anchor="middle" class="mono text-sub">Node / Express</text>
+  </g>
+
+  <path d="M 136 67 L 166 67" class="arrow-amber" />
+
+  <!-- Node 2: Socket.io Bus -->
+  <g transform="translate(166, 40)">
+    <rect width="125" height="55" rx="3" class="box-active" />
+    <text x="62" y="24" text-anchor="middle" class="mono text-title" fill="#D29922">Socket.io Bus</text>
+    <text x="62" y="38" text-anchor="middle" class="mono text-sub">WebSocket Broadcast</text>
+  </g>
+
+  <path d="M 291 67 L 321 67" class="arrow" />
+
+  <!-- Node 3: SLA Engine -->
+  <g transform="translate(321, 40)">
+    <rect width="125" height="55" rx="3" class="box" />
+    <text x="62" y="24" text-anchor="middle" class="mono text-title">Queue Tracker</text>
+    <text x="62" y="38" text-anchor="middle" class="mono text-sub">&lt; 6 min SLA Target</text>
+  </g>
+
+  <path d="M 446 67 L 476 67" class="arrow-amber" />
+
+  <!-- Node 4: Mongo Store -->
+  <g transform="translate(476, 40)">
+    <rect width="125" height="55" rx="3" class="box" />
+    <text x="62" y="24" text-anchor="middle" class="mono text-title">MongoDB</text>
+    <text x="62" y="38" text-anchor="middle" class="mono text-sub">0.4ms Write Lock</text>
+  </g>
+
+  <path d="M 601 67 L 631 67" class="arrow" />
+
+  <!-- Node 5: Kitchen -->
+  <g transform="translate(631, 40)">
+    <rect width="73" height="55" rx="3" class="box" stroke="#D29922" />
+    <text x="36" y="24" text-anchor="middle" class="mono text-title" fill="#D29922">Kitchen</text>
+    <text x="36" y="38" text-anchor="middle" class="mono text-sub">Display Alert</text>
+  </g>
+</svg>

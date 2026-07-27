@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 68" width="760" height="68">
+  <defs>
+    <style>
+      .mono { font-family: 'SFMono-Regular', 'Fira Code', 'JetBrains Mono', ui-monospace, monospace; }
+      .bg { fill: #0D1117; }
+      .border { stroke: #21262D; stroke-width: 1; }
+      .trace-line { stroke: #21262D; stroke-width: 1.5; }
+      .trace-active { stroke: #58A6FF; stroke-width: 1.5; stroke-dasharray: 4 2; }
+    </style>
+  </defs>
+
+  <rect width="760" height="68" rx="4" class="bg border"/>
+
+  <!-- Pipeline trace vector line -->
+  <line x1="50" y1="28" x2="710" y2="28" class="trace-line"/>
+
+  <!-- Step 01: THINK (Done) -->
+  <circle cx="50" cy="28" r="9" fill="#238636"/>
+  <text x="50" y="32" text-anchor="middle" class="mono" font-size="9" fill="#E6EDF3" font-weight="700">✓</text>
+  <text x="50" y="52" text-anchor="middle" class="mono" font-size="9" fill="#8B949E">01.THINK</text>
+
+  <!-- Step 02: ARCHITECT (Done) -->
+  <circle cx="182" cy="28" r="9" fill="#238636"/>
+  <text x="182" y="32" text-anchor="middle" class="mono" font-size="9" fill="#E6EDF3" font-weight="700">✓</text>
+  <text x="182" y="52" text-anchor="middle" class="mono" font-size="9" fill="#8B949E">02.ARCHITECT</text>
+
+  <!-- Step 03: BUILD (Active Glow) -->
+  <circle cx="314" cy="28" r="16" fill="#1F6FEB" opacity="0.12"/>
+  <circle cx="314" cy="28" r="11" fill="#1F6FEB" opacity="0.25"/>
+  <circle cx="314" cy="28" r="7" fill="#58A6FF"/>
+  <text x="314" y="52" text-anchor="middle" class="mono" font-size="9" fill="#58A6FF" font-weight="700">03.BUILD</text>
+
+  <!-- Step 04: VERIFY -->
+  <circle cx="446" cy="28" r="7" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+  <text x="446" y="52" text-anchor="middle" class="mono" font-size="9" fill="#484F58">04.VERIFY</text>
+
+  <!-- Step 05: DEPLOY -->
+  <circle cx="578" cy="28" r="7" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+  <text x="578" y="52" text-anchor="middle" class="mono" font-size="9" fill="#484F58">05.DEPLOY</text>
+
+  <!-- Step 06: ITERATE -->
+  <circle cx="710" cy="28" r="7" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+  <text x="710" y="52" text-anchor="middle" class="mono" font-size="9" fill="#484F58">06.ITERATE</text>
+</svg>

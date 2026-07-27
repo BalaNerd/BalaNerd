@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 120" width="720" height="120">
+  <defs>
+    <style>
+      .mono { font-family: 'SFMono-Regular', 'Fira Code', 'JetBrains Mono', monospace; font-size: 11px; }
+      .box { fill: #161B22; stroke: #30363D; stroke-width: 1; }
+      .box-active { fill: #161B22; stroke: #58A6FF; stroke-width: 1; }
+      .text-title { fill: #E6EDF3; font-weight: 600; }
+      .text-sub { fill: #8B949E; font-size: 9.5px; }
+      .arrow { stroke: #484F58; stroke-width: 1; fill: none; marker-end: url(#arr); }
+      .arrow-blue { stroke: #58A6FF; stroke-width: 1; fill: none; marker-end: url(#arr-blue); }
+    </style>
+    <marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#484F58" />
+    </marker>
+    <marker id="arr-blue" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#58A6FF" />
+    </marker>
+  </defs>
+
+  <rect width="720" height="120" rx="4" fill="#0D1117" stroke="#21262D" stroke-width="1" />
+
+  <!-- Diagram Title -->
+  <text x="16" y="22" class="mono text-sub">ARCHITECTURE DIAGRAM // AEGIS SENTINEL DATA PIPELINE</text>
+
+  <!-- Node 1: Ingestion -->
+  <g transform="translate(16, 40)">
+    <rect width="120" height="55" rx="3" class="box" />
+    <text x="60" y="24" text-anchor="middle" class="mono text-title">FIRMS / USGS</text>
+    <text x="60" y="38" text-anchor="middle" class="mono text-sub">Data Ingestion</text>
+  </g>
+
+  <path d="M 136 67 L 166 67" class="arrow" />
+
+  <!-- Node 2: Feature Store -->
+  <g transform="translate(166, 40)">
+    <rect width="125" height="55" rx="3" class="box-active" />
+    <text x="62" y="24" text-anchor="middle" class="mono text-title" fill="#58A6FF">Feature Store</text>
+    <text x="62" y="38" text-anchor="middle" class="mono text-sub">Redis + Postgres</text>
+  </g>
+
+  <path d="M 291 67 L 321 67" class="arrow-blue" />
+
+  <!-- Node 3: RAG Engine -->
+  <g transform="translate(321, 40)">
+    <rect width="125" height="55" rx="3" class="box" />
+    <text x="62" y="24" text-anchor="middle" class="mono text-title">RAG Engine</text>
+    <text x="62" y="38" text-anchor="middle" class="mono text-sub">PyTorch / FastAPI</text>
+  </g>
+
+  <path d="M 446 67 L 476 67" class="arrow" />
+
+  <!-- Node 4: MLOps Drift -->
+  <g transform="translate(476, 40)">
+    <rect width="125" height="55" rx="3" class="box" />
+    <text x="62" y="24" text-anchor="middle" class="mono text-title">MLOps Watcher</text>
+    <text x="62" y="38" text-anchor="middle" class="mono text-sub">PSI Drift Loop</text>
+  </g>
+
+  <path d="M 601 67 L 631 67" class="arrow" />
+
+  <!-- Node 5: Output -->
+  <g transform="translate(631, 40)">
+    <rect width="73" height="55" rx="3" class="box" stroke="#2EA043" />
+    <text x="36" y="24" text-anchor="middle" class="mono text-title" fill="#2EA043">Alert</text>
+    <text x="36" y="38" text-anchor="middle" class="mono text-sub">PubSub</text>
+  </g>
+</svg>

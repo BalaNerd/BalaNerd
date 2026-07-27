@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 120" width="720" height="120">
+  <defs>
+    <style>
+      .mono { font-family: 'SFMono-Regular', 'Fira Code', 'JetBrains Mono', monospace; font-size: 11px; }
+      .box { fill: #161B22; stroke: #30363D; stroke-width: 1; }
+      .box-active { fill: #161B22; stroke: #2EA043; stroke-width: 1; }
+      .text-title { fill: #E6EDF3; font-weight: 600; }
+      .text-sub { fill: #8B949E; font-size: 9.5px; }
+      .arrow { stroke: #484F58; stroke-width: 1; fill: none; marker-end: url(#arr); }
+      .arrow-green { stroke: #2EA043; stroke-width: 1; fill: none; marker-end: url(#arr-green); }
+    </style>
+    <marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#484F58" />
+    </marker>
+    <marker id="arr-green" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#2EA043" />
+    </marker>
+  </defs>
+
+  <rect width="720" height="120" rx="4" fill="#0D1117" stroke="#21262D" stroke-width="1" />
+
+  <text x="16" y="22" class="mono text-sub">ARCHITECTURE DIAGRAM // SPENDWISE TRANSACTION ENGINE</text>
+
+  <!-- Node 1: Tx Worker -->
+  <g transform="translate(16, 40)">
+    <rect width="120" height="55" rx="3" class="box" />
+    <text x="60" y="24" text-anchor="middle" class="mono text-title">Tx Ingest</text>
+    <text x="60" y="38" text-anchor="middle" class="mono text-sub">FastAPI Worker</text>
+  </g>
+
+  <path d="M 136 67 L 166 67" class="arrow-green" />
+
+  <!-- Node 2: Database -->
+  <g transform="translate(166, 40)">
+    <rect width="125" height="55" rx="3" class="box-active" />
+    <text x="62" y="24" text-anchor="middle" class="mono text-title" fill="#2EA043">PostgreSQL</text>
+    <text x="62" y="38" text-anchor="middle" class="mono text-sub">Indexed Ledger</text>
+  </g>
+
+  <path d="M 291 67 L 321 67" class="arrow" />
+
+  <!-- Node 3: Redis Cache -->
+  <g transform="translate(321, 40)">
+    <rect width="125" height="55" rx="3" class="box" />
+    <text x="62" y="24" text-anchor="middle" class="mono text-title">Redis Cache</text>
+    <text x="62" y="38" text-anchor="middle" class="mono text-sub">98% Hit Ratio</text>
+  </g>
+
+  <path d="M 446 67 L 476 67" class="arrow-green" />
+
+  <!-- Node 4: Auth -->
+  <g transform="translate(476, 40)">
+    <rect width="125" height="55" rx="3" class="box" />
+    <text x="62" y="24" text-anchor="middle" class="mono text-title">Supabase JWT</text>
+    <text x="62" y="38" text-anchor="middle" class="mono text-sub">Auth Boundary</text>
+  </g>
+
+  <path d="M 601 67 L 631 67" class="arrow" />
+
+  <!-- Node 5: Client -->
+  <g transform="translate(631, 40)">
+    <rect width="73" height="55" rx="3" class="box" stroke="#58A6FF" />
+    <text x="36" y="24" text-anchor="middle" class="mono text-title" fill="#58A6FF">Client</text>
+    <text x="36" y="38" text-anchor="middle" class="mono text-sub">React SPA</text>
+  </g>
+</svg>
