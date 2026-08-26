@@ -26,7 +26,7 @@ location:     "Chennai, India"
 role:         "Software Engineer"
 institution:  "SRM Institute of Science and Technology"
 degree:       "B.Tech CSE — Big Data Analytics"
-cgpa:         8.61 / 10.0
+cgpa:         8.67 / 10.0
 graduating:   2027
 internship:   "Data Scientist & Analyst Intern @ Zidio Development"
 focus:        ["Full-Stack Engineering", "Data Systems", "MLOps", "RAG Pipelines"]
