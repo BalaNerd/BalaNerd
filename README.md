@@ -154,7 +154,7 @@ Applied machine learning · Feature pipelines · Backend query optimization · D
 
 **`B.TECH COMPUTER SCIENCE ENGINEERING`** — SRM Institute of Science and Technology &nbsp;`2023 – 2027`
 
-Big Data Analytics Specialization · CGPA **8.61 / 10.0** · Chennai, Tamil Nadu
+Big Data Analytics Specialization · CGPA **8.67 / 10.0** · Chennai, Tamil Nadu
 
 <br>
 
