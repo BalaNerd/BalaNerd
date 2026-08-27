@@ -1,0 +1,41 @@
+# Space Invaders contribution animation
+# Generates SVG animations from your GitHub contribution graph and pushes
+# them to the `output` branch. Embed via:
+# https://raw.githubusercontent.com/BalaNerd/BalaNerd/output/git-invader-multi-dark.svg
+
+name: git-invaders
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"  # Refresh every 12 hours
+  workflow_dispatch:          # Allow manual trigger
+  push:
+    branches: [main, master]
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate SVG
+        uses: VARDHAMANPATEL23/git-invader@v1.4.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_username: ${{ github.repository_owner }}
+          color: multi   # multi = per-alien gradient across all 12 vivid hues (most polished)
+          mode: dark     # dark theme to match #0d1117 aesthetic
+          # ship: (blank = auto-selected from total commit count)
+          # output_dir: dist  (default — do not change; matches build_dir below)
+
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_history: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -195,6 +195,34 @@ Big Data Analytics Specialization · CGPA **8.67 / 10.0** · Chennai, Tamil Nadu
 
 ---
 
+## &nbsp; Contribution Activity
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/BalaNerd/BalaNerd/main/profile-night-view.svg" alt="3D GitHub Contribution Graph" width="100%" />
+
+</div>
+
+<br>
+
+---
+
+## &nbsp; Space Invaders
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BalaNerd/BalaNerd/output/git-invader-multi-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/BalaNerd/BalaNerd/output/git-invader-multi-light.svg" />
+  <img alt="Space Invaders contribution animation" src="https://raw.githubusercontent.com/BalaNerd/BalaNerd/output/git-invader-multi-dark.svg" width="100%" />
+</picture>
+
+</div>
+
+<br>
+
+---
+
 <div align="center">
 
 ### Let's build something useful.
