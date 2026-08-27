@@ -4,13 +4,13 @@
 
 <br>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=800&color=58A6FF&center=true&vCenter=true&multiline=false&random=false&width=600&height=50&lines=Building+full-stack+systems;Engineering+data+pipelines;Exploring+MLOps+%26+AI;Designing+observable+backends)](https://github.com/BalaNerd)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono\&weight=600\&size=22\&duration=3000\&pause=800\&color=58A6FF\&center=true\&vCenter=true\&multiline=false\&random=false\&width=600\&height=50\&lines=Building+full-stack+systems;Engineering+data+pipelines;Exploring+MLOps+%26+AI;Designing+observable+backends)](https://github.com/BalaNerd)
 
 <br>
 
-[![GitHub](https://img.shields.io/badge/GitHub-BalaNerd-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BalaNerd)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-s--balaraju-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/s-balaraju/)
-[![Email](https://img.shields.io/badge/Email-balaraju1805%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:balaraju1805@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-BalaNerd-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/BalaNerd)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-s--balaraju-0A66C2?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/s-balaraju/)
+[![Email](https://img.shields.io/badge/Email-balaraju1805%40gmail.com-EA4335?style=for-the-badge\&logo=gmail\&logoColor=white)](mailto:balaraju1805@gmail.com)
 
 </div>
 
@@ -18,7 +18,7 @@
 
 ---
 
-## &nbsp; About Me
+##   About Me
 
 ```yaml
 name:         "S Bala Raju"
@@ -39,33 +39,33 @@ status:       "Open to high-impact roles"
 
 ---
 
-## &nbsp; Tech Stack
+##   Tech Stack
 
 <div align="center">
 
 **Languages**
 
-[![My Skills](https://skillicons.dev/icons?i=python,ts,js,java,c&theme=dark)](https://github.com/BalaNerd)
+[![My Skills](https://skillicons.dev/icons?i=python,ts,js,java,c\&theme=dark)](https://github.com/BalaNerd)
 
 **Frontend**
 
-[![My Skills](https://skillicons.dev/icons?i=react,nextjs,tailwind,html&theme=dark)](https://github.com/BalaNerd)
+[![My Skills](https://skillicons.dev/icons?i=react,nextjs,tailwind,html\&theme=dark)](https://github.com/BalaNerd)
 
 **Backend**
 
-[![My Skills](https://skillicons.dev/icons?i=nodejs,express,fastapi,flask&theme=dark)](https://github.com/BalaNerd)
+[![My Skills](https://skillicons.dev/icons?i=nodejs,express,fastapi,flask\&theme=dark)](https://github.com/BalaNerd)
 
 **Data & AI**
 
-[![My Skills](https://skillicons.dev/icons?i=pytorch,sklearn,opencv&theme=dark)](https://github.com/BalaNerd)
+[![My Skills](https://skillicons.dev/icons?i=pytorch,sklearn,opencv\&theme=dark)](https://github.com/BalaNerd)
 
 **Database & Platform**
 
-[![My Skills](https://skillicons.dev/icons?i=supabase,postgres,mysql,mongodb&theme=dark)](https://github.com/BalaNerd)
+[![My Skills](https://skillicons.dev/icons?i=supabase,postgres,mysql,mongodb\&theme=dark)](https://github.com/BalaNerd)
 
 **DevOps & Tools**
 
-[![My Skills](https://skillicons.dev/icons?i=git,githubactions,docker,aws,vscode,figma,linux,postman&theme=dark)](https://github.com/BalaNerd)
+[![My Skills](https://skillicons.dev/icons?i=git,githubactions,docker,aws,vscode,figma,linux,postman\&theme=dark)](https://github.com/BalaNerd)
 
 </div>
 
@@ -73,7 +73,7 @@ status:       "Open to high-impact roles"
 
 ---
 
-## &nbsp; Activity
+##   Activity
 
 `GITHUB / BALANERD`
 
@@ -107,11 +107,11 @@ Turning experiments into working software and continuously improving engineering
 
 <br>
 
-[**GITHUB PROFILE ↗**](https://github.com/BalaNerd) &nbsp;&nbsp;·&nbsp;&nbsp; [**REPOSITORIES ↗**](https://github.com/BalaNerd?tab=repositories) &nbsp;&nbsp;·&nbsp;&nbsp; [**CONTRIBUTIONS ↗**](https://github.com/BalaNerd?tab=overview)
+[**GITHUB PROFILE ↗**](https://github.com/BalaNerd)   ·   [**REPOSITORIES ↗**](https://github.com/BalaNerd?tab=repositories)   ·   [**CONTRIBUTIONS ↗**](https://github.com/BalaNerd?tab=overview)
 
 ---
 
-## &nbsp; What I'm Working On
+##   What I'm Working On
 
 <div align="center">
 
@@ -119,20 +119,17 @@ Turning experiments into working software and continuously improving engineering
 <tr>
 <td align="center" width="33%">
 
-**BUILDING**<br>
-<sub>Aegis Sentinel v2 — MLOps drift detection & inference telemetry platform</sub>
+**BUILDING**<br> <sub>Aegis Sentinel v2 — MLOps drift detection & inference telemetry platform</sub>
 
 </td>
 <td align="center" width="33%">
 
-**LEARNING**<br>
-<sub>Distributed systems · RAG pipelines · LLM evaluation · Data engineering at scale</sub>
+**LEARNING**<br> <sub>Distributed systems · RAG pipelines · LLM evaluation · Data engineering at scale</sub>
 
 </td>
 <td align="center" width="33%">
 
-**SHIPPING**<br>
-<sub>SpendWise — Financial analytics engine with full-stack deployment on Vercel</sub>
+**SHIPPING**<br> <sub>SpendWise — Financial analytics engine with full-stack deployment on Vercel</sub>
 
 </td>
 </tr>
@@ -144,15 +141,15 @@ Turning experiments into working software and continuously improving engineering
 
 ---
 
-## &nbsp; Experience
+##   Experience
 
-**`DATA SCIENTIST & ANALYST INTERN`** — Zidio Development &nbsp;`2026`
+**`DATA SCIENTIST & ANALYST INTERN`** — Zidio Development  `2026`
 
 Applied machine learning · Feature pipelines · Backend query optimization · Data processing at scale
 
 <br>
 
-**`B.TECH COMPUTER SCIENCE ENGINEERING`** — SRM Institute of Science and Technology &nbsp;`2023 – 2027`
+**`B.TECH COMPUTER SCIENCE ENGINEERING`** — SRM Institute of Science and Technology  `2023 – 2027`
 
 Big Data Analytics Specialization · CGPA **8.67 / 10.0** · Chennai, Tamil Nadu
 
@@ -160,32 +157,35 @@ Big Data Analytics Specialization · CGPA **8.67 / 10.0** · Chennai, Tamil Nadu
 
 ---
 
-## &nbsp; Proof of Work
+##   Proof of Work
 
 <table width="100%">
 <tr>
 <td width="34%" valign="top">
 
 **Hackathons**
-- Hack the Horizon &nbsp;<sub>24h Full-Stack Sprint</sub>
-- NumeroHack &nbsp;<sub>Mathematical Modeling</sub>
-- Analytical Problem Solving Challenge
+
+* Hack the Horizon  <sub>24h Full-Stack Sprint</sub>
+* NumeroHack  <sub>Mathematical Modeling</sub>
+* Analytical Problem Solving Challenge
 
 </td>
 <td width="33%" valign="top">
 
 **Certifications**
-- AWS Cloud Foundations
-- NPTEL Data Structures & Algorithms
-- Data Analytics Specialization
+
+* AWS Cloud Foundations
+* NPTEL Data Structures & Algorithms
+* Data Analytics Specialization
 
 </td>
 <td width="33%" valign="top">
 
 **Engineering Principles**
-- Observability from day zero
-- Strict API boundary integrity
-- Evidence-based iteration
+
+* Observability from day zero
+* Strict API boundary integrity
+* Evidence-based iteration
 
 </td>
 </tr>
@@ -195,11 +195,11 @@ Big Data Analytics Specialization · CGPA **8.67 / 10.0** · Chennai, Tamil Nadu
 
 ---
 
-## &nbsp; Contribution Activity
+##   Contribution Activity
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/BalaNerd/BalaNerd/main/profile-night-view.svg" alt="3D GitHub Contribution Graph" width="100%" />
+<img src="https://raw.githubusercontent.com/BalaNerd/BalaNerd/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3D GitHub Contribution Graph" width="100%" />
 
 </div>
 
@@ -207,7 +207,7 @@ Big Data Analytics Specialization · CGPA **8.67 / 10.0** · Chennai, Tamil Nadu
 
 ---
 
-## &nbsp; Space Invaders
+##   Space Invaders
 
 <div align="center">
 
@@ -227,9 +227,9 @@ Big Data Analytics Specialization · CGPA **8.67 / 10.0** · Chennai, Tamil Nadu
 
 ### Let's build something useful.
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/BalaNerd)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/s-balaraju/)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:balaraju1805@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square\&logo=github\&logoColor=white)](https://github.com/BalaNerd)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/s-balaraju/)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square\&logo=gmail\&logoColor=white)](mailto:balaraju1805@gmail.com)
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1f2e,100:0d1117&height=120&section=footer&text=S%20BALA%20RAJU%20%C2%B7%20CHENNAI%20%C2%B7%202026&fontSize=14&fontColor=8b949e&fontAlignY=75&animation=fadeIn" alt="Footer" width="100%" />
 
