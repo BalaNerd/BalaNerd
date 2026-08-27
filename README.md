@@ -22,7 +22,7 @@
 
 ```yaml
 name:         "S Bala Raju"
-location:     "Chennai, India"
+location:     "Kanyakumari, India"
 role:         "Software Engineer"
 institution:  "SRM Institute of Science and Technology"
 degree:       "B.Tech CSE — Big Data Analytics"
