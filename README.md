@@ -231,6 +231,6 @@ Big Data Analytics Specialization · CGPA **8.67 / 10.0** · Chennai, Tamil Nadu
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/s-balaraju/)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square\&logo=gmail\&logoColor=white)](mailto:balaraju1805@gmail.com)
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1f2e,100:0d1117&height=120&section=footer&text=S%20BALA%20RAJU%20%C2%B7%20CHENNAI%20%C2%B7%202026&fontSize=14&fontColor=8b949e&fontAlignY=75&animation=fadeIn" alt="Footer" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1f2e,100:0d1117&height=120&section=footer&text=S%20BALA%20RAJU%20%C2%B7%20KANYAKUMARI%20%C2%B7%202026&fontSize=14&fontColor=8b949e&fontAlignY=75&animation=fadeIn" alt="Footer" width="100%" />
 
 </div>
